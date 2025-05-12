@@ -1,59 +1,114 @@
 # DesignTokenApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+A modern Angular application for managing and visualizing design tokens. This project helps teams maintain consistent design systems by providing a centralized platform for managing design tokens.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Design token management and visualization
+- Real-time token updates
+- Modern Angular 19.x architecture
+- Responsive design
 
+## Prerequisites
+
+- Node.js (LTS version recommended)
+- npm (comes with Node.js)
+- Angular CLI 19.2.11 or later
+
+## Getting Started
+
+1. Clone the repository:
 ```bash
-ng serve
+git clone [repository-url]
+cd design-token-app
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Code scaffolding
+3. Start the development server:
+```bash
+npm start
+```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The application will be available at `http://localhost:4200/`.
+
+## Development
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+
+### Available Scripts
+
+- `npm start` - Starts the development server
+- `npm run build` - Builds the project for production
+- `npm run test` - Runs unit tests
+- `npm run watch` - Builds the project and watches for changes
+
+### Code Scaffolding
+
+To generate new components, services, or other Angular artifacts:
 
 ```bash
 ng generate component component-name
+ng generate service service-name
+ng generate directive directive-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+For a complete list of available schematics, run:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Building for Production
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To create a production build:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+The build artifacts will be stored in the `dist/` directory.
 
-For end-to-end (e2e) testing, run:
+## Testing
+
+### Unit Tests
+
+Run unit tests using Karma:
+
+```bash
+npm test
+```
+
+### End-to-End Tests
+
+To run end-to-end tests:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Project Structure
+
+```
+src/
+├── app/          # Application source code
+├── assets/       # Static assets
+└── environments/ # Environment configurations
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular Documentation](https://angular.dev)
+- [Angular CLI Overview](https://angular.dev/tools/cli)
+- [Design Tokens Documentation](https://design-tokens.github.io/community-group/format/)
