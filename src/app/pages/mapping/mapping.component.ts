@@ -11,38 +11,84 @@ import { CommonModule } from '@angular/common';
       <div class="mapping-grid">
         <div class="mapping-section">
           <h2>Color Mapping</h2>
-          <div class="mapping-list">
-            <div class="mapping-item">
-              <div class="primitive-token">
-                <div class="token-preview" style="background-color: var(--color-blue-500)"></div>
-                <div class="token-info">
-                  <span class="token-name">--color-blue-500</span>
-                  <span class="token-value">#3B82F6</span>
+          <div class="mode-group">
+            <h3 class="mode-header">Light Mode</h3>
+            <div class="mapping-list">
+              <!-- Primary Color Mapping (Light) -->
+              <div class="mapping-item horizontal">
+                <div class="primitive-token">
+                  <div class="token-preview" style="background-color: var(--color-blue-500)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--color-blue-500</span>
+                    <span class="token-value">#3B82F6</span>
+                  </div>
+                </div>
+                <div class="mapping-arrow">→</div>
+                <div class="semantic-token">
+                  <div class="token-preview" style="background-color: var(--primary-color)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--primary-color</span>
+                    <span class="token-value">var(--color-blue-500)</span>
+                  </div>
                 </div>
               </div>
-              <div class="mapping-arrow">→</div>
-              <div class="semantic-token">
-                <div class="token-preview" style="background-color: var(--primary-color)"></div>
-                <div class="token-info">
-                  <span class="token-name">--primary-color</span>
-                  <span class="token-value">var(--color-blue-500)</span>
+              <!-- Secondary Color Mapping (Light) -->
+              <div class="mapping-item horizontal">
+                <div class="primitive-token">
+                  <div class="token-preview" style="background-color: var(--color-gray-500)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--color-gray-500</span>
+                    <span class="token-value">#9E9E9E</span>
+                  </div>
+                </div>
+                <div class="mapping-arrow">→</div>
+                <div class="semantic-token">
+                  <div class="token-preview" style="background-color: var(--color-gray-500)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--secondary-color</span>
+                    <span class="token-value">var(--color-gray-500)</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="mapping-item">
-              <div class="primitive-token">
-                <div class="token-preview" style="background-color: var(--color-gray-500)"></div>
-                <div class="token-info">
-                  <span class="token-name">--color-gray-500</span>
-                  <span class="token-value">#6B7280</span>
+          </div>
+          <div class="mode-group">
+            <h3 class="mode-header">Dark Mode</h3>
+            <div class="mapping-list">
+              <!-- Primary Color Mapping (Dark) -->
+              <div class="mapping-item horizontal">
+                <div class="primitive-token">
+                  <div class="token-preview" style="background-color: var(--color-blue-300)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--color-blue-300</span>
+                    <span class="token-value">#64B5F6</span>
+                  </div>
+                </div>
+                <div class="mapping-arrow">→</div>
+                <div class="semantic-token">
+                  <div class="token-preview" style="background-color: var(--color-blue-300)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--primary-color</span>
+                    <span class="token-value">var(--color-blue-300)</span>
+                  </div>
                 </div>
               </div>
-              <div class="mapping-arrow">→</div>
-              <div class="semantic-token">
-                <div class="token-preview" style="background-color: var(--secondary-color)"></div>
-                <div class="token-info">
-                  <span class="token-name">--secondary-color</span>
-                  <span class="token-value">var(--color-gray-500)</span>
+              <!-- Secondary Color Mapping (Dark) -->
+              <div class="mapping-item horizontal">
+                <div class="primitive-token">
+                  <div class="token-preview" style="background-color: var(--color-gray-400)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--color-gray-400</span>
+                    <span class="token-value">#BDBDBD</span>
+                  </div>
+                </div>
+                <div class="mapping-arrow">→</div>
+                <div class="semantic-token">
+                  <div class="token-preview" style="background-color: var(--color-gray-400)"></div>
+                  <div class="token-info">
+                    <span class="token-name">--secondary-color</span>
+                    <span class="token-value">var(--color-gray-400)</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,9 +130,9 @@ import { CommonModule } from '@angular/common';
         <div class="mapping-section full-width">
           <h2>Spacing Mapping</h2>
           <div class="mapping-list">
-            <div class="mapping-item">
+            <div class="mapping-item spacing-card horizontal">
               <div class="primitive-token">
-                <div class="token-preview" style="width: 8px; height: 8px"></div>
+                <div class="token-preview spacing-preview" style="width: 8px; height: 8px; background: #9ca3af;"></div>
                 <div class="token-info">
                   <span class="token-name">--spacing-2</span>
                   <span class="token-value">8px</span>
@@ -94,16 +140,16 @@ import { CommonModule } from '@angular/common';
               </div>
               <div class="mapping-arrow">→</div>
               <div class="semantic-token">
-                <div class="token-preview" style="width: var(--spacing-sm); height: var(--spacing-sm)"></div>
+                <div class="token-preview spacing-preview" style="width: var(--spacing-sm); height: var(--spacing-sm); background: #9ca3af;"></div>
                 <div class="token-info">
                   <span class="token-name">--spacing-sm</span>
                   <span class="token-value">var(--spacing-2)</span>
                 </div>
               </div>
             </div>
-            <div class="mapping-item">
+            <div class="mapping-item spacing-card horizontal">
               <div class="primitive-token">
-                <div class="token-preview" style="width: 16px; height: 16px"></div>
+                <div class="token-preview spacing-preview" style="width: 16px; height: 16px; background: #9ca3af;"></div>
                 <div class="token-info">
                   <span class="token-name">--spacing-4</span>
                   <span class="token-value">16px</span>
@@ -111,7 +157,7 @@ import { CommonModule } from '@angular/common';
               </div>
               <div class="mapping-arrow">→</div>
               <div class="semantic-token">
-                <div class="token-preview" style="width: var(--spacing-md); height: var(--spacing-md)"></div>
+                <div class="token-preview spacing-preview" style="width: var(--spacing-md); height: var(--spacing-md); background: #9ca3af;"></div>
                 <div class="token-info">
                   <span class="token-name">--spacing-md</span>
                   <span class="token-value">var(--spacing-4)</span>
@@ -152,20 +198,60 @@ import { CommonModule } from '@angular/common';
       }
     }
 
-    .mapping-list {
+    .theme-mapping-header.vertical {
+      flex-direction: row;
+      gap: 2rem;
+      margin-left: 0;
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .mapping-list.vertical {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+    }
+
+    .mapping-item.vertical {
       display: flex;
       flex-direction: column;
       gap: var(--spacing-md);
+      align-items: stretch;
+      background: none;
+      box-shadow: none;
+      padding: 0;
     }
 
-    .mapping-item {
+    .theme-label.mobile {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .theme-mapping-header.vertical {
+        display: none;
+      }
+      .theme-label.mobile {
+        display: block;
+        font-weight: 600;
+        font-size: var(--font-size-sm);
+        color: var(--text-color-secondary);
+        margin-bottom: var(--spacing-xs);
+      }
+    }
+
+    .theme-mapping {
+      flex: 1;
       display: flex;
       align-items: center;
       gap: var(--spacing-md);
-      padding: var(--spacing-md);
       background-color: var(--surface-color);
       border-radius: var(--border-radius-md);
       box-shadow: var(--shadow-sm);
+      padding: var(--spacing-md);
+    }
+
+    .theme-mapping.dark {
+      /* Optionally add a border or style to distinguish dark theme column */
+      border-left: 2px dashed var(--border-color);
     }
 
     .primitive-token,
@@ -223,6 +309,36 @@ import { CommonModule } from '@angular/common';
 
     code {
       display: block;
+    }
+
+    .mode-group {
+      margin-bottom: var(--spacing-xl);
+    }
+    .mode-header {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      margin-bottom: var(--spacing-md);
+      color: var(--primary-color);
+    }
+
+    .mapping-item.horizontal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: var(--spacing-md);
+      background: var(--surface-color);
+      box-shadow: var(--shadow-sm);
+      border-radius: var(--border-radius-md);
+      padding: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .spacing-card {
+      background: var(--surface-color);
+      box-shadow: var(--shadow-sm);
+      border-radius: var(--border-radius-md);
+      padding: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
     }
   `]
 })
