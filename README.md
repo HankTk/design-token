@@ -1,13 +1,56 @@
 # DesignTokenApp
 
-A modern Angular application for managing and visualizing design tokens. This project helps teams maintain consistent design systems by providing a centralized platform for managing design tokens.
+A modern Angular application for managing and visualizing design tokens. This project helps teams maintain consistent design systems by providing a centralized platform for managing design tokens. Design tokens are the building blocks of a design system, representing design decisions like colors, spacing, typography, and more.
+
+## What are Design Tokens?
+
+Design tokens are the smallest, indivisible parts of a design system. They represent design decisions like:
+- Colors
+- Typography (font sizes, weights, line heights)
+- Spacing
+- Border radiuses
+- Shadows
+- Animation durations
+- And more
+
+By using design tokens, teams can maintain consistency across their products and make global design changes efficiently.
 
 ## Features
 
-- Design token management and visualization
-- Real-time token updates
-- Modern Angular 19.x architecture
-- Responsive design
+- **Design Token Management**
+  - Create, edit, and delete design tokens
+  - Organize tokens by categories and types
+  - Import/export token definitions
+  - Version control for token changes
+
+- **Visualization Tools**
+  - Real-time token preview
+  - Color palette visualization
+  - Typography scale display
+  - Spacing system visualization
+  - Interactive token documentation
+
+- **Integration Capabilities**
+  - Export tokens to various formats (CSS, SCSS, JSON)
+  - Generate design system documentation
+  - Integration with popular design tools
+  - API for programmatic access
+
+- **Modern Architecture**
+  - Built with Angular 19.x
+  - Responsive and accessible design
+  - Real-time updates and collaboration
+  - Performance optimized
+
+## Tech Stack
+
+- **Frontend Framework**: Angular 19.x
+- **UI Components**: Angular Material
+- **State Management**: NgRx
+- **Styling**: SCSS with CSS Custom Properties
+- **Testing**: Jest and Cypress
+- **Build Tools**: Angular CLI, Webpack
+- **Package Manager**: npm
 
 ## Prerequisites
 
@@ -28,16 +71,30 @@ cd design-token-app
 npm install
 ```
 
-3. Start the development server:
+3. Configure environment:
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
+
+4. Start the development server:
 ```bash
 npm start
 ```
 
 The application will be available at `http://localhost:4200/`.
 
-## Development
+## Project Configuration
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+### Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```env
+API_URL=your_api_url
+AUTH_ENABLED=true
+FEATURE_FLAGS={"newUI":true}
+```
 
 ### Available Scripts
 
@@ -45,70 +102,56 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 - `npm run build` - Builds the project for production
 - `npm run test` - Runs unit tests
 - `npm run watch` - Builds the project and watches for changes
-
-### Code Scaffolding
-
-To generate new components, services, or other Angular artifacts:
-
-```bash
-ng generate component component-name
-ng generate service service-name
-ng generate directive directive-name
-```
-
-For a complete list of available schematics, run:
-
-```bash
-ng generate --help
-```
-
-## Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## Testing
-
-### Unit Tests
-
-Run unit tests using Karma:
-
-```bash
-npm test
-```
-
-### End-to-End Tests
-
-To run end-to-end tests:
-
-```bash
-ng e2e
-```
+- `npm run lint` - Runs linting
+- `npm run e2e` - Runs end-to-end tests
+- `npm run storybook` - Starts Storybook for component development
 
 ## Project Structure
 
 ```
 src/
-├── app/          # Application source code
-├── assets/       # Static assets
-└── environments/ # Environment configurations
+├── app/
+│   ├── core/           # Core module (services, guards, interceptors)
+│   ├── shared/         # Shared module (components, directives, pipes)
+│   ├── features/       # Feature modules
+│   │   ├── tokens/     # Token management feature
+│   │   ├── preview/    # Token preview feature
+│   │   └── settings/   # Application settings
+│   └── store/          # State management
+├── assets/             # Static assets
+│   ├── icons/          # SVG icons
+│   └── styles/         # Global styles
+├── environments/       # Environment configurations
+└── stories/           # Storybook stories
 ```
 
 ## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+3. Install dependencies (`npm install`)
+4. Make your changes
+5. Run tests (`npm test`)
+6. Commit your changes (`git commit -m 'Add some amazing feature'`)
+7. Push to the branch (`git push origin feature/amazing-feature`)
+8. Open a Pull Request
+
+### Development Guidelines
+
+- Follow the Angular style guide
+- Write unit tests for new features
+- Update documentation for API changes
+- Use conventional commits
+- Keep PRs focused and small
 
 ## Additional Resources
 
 - [Angular Documentation](https://angular.dev)
 - [Angular CLI Overview](https://angular.dev/tools/cli)
 - [Design Tokens Documentation](https://design-tokens.github.io/community-group/format/)
+- [Angular Material](https://material.angular.io)
+- [NgRx Documentation](https://ngrx.io/docs)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
