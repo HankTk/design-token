@@ -1,0 +1,5 @@
+.main-content {
+  margin-top: 64px; // Header height
+  padding: var(--spacing-lg);
+  min-height: calc(100vh - 64px);
+} 

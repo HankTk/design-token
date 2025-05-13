@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="header__left">
+    <button class="btn btn-icon" (click)="toggleSidenav()">
+      <i class="material-icons">menu</i>
+    </button>
+    <h1>Design Token App</h1>
+  </div>
+  <div class="header__right">
+    <button class="btn btn-icon" (click)="toggleSettings()">
+      <i class="material-icons">settings</i>
+    </button>
+    <button class="btn btn-icon" (click)="toggleTheme()">
+      <i class="material-icons">{{ (theme$ | async) === 'dark' ? 'light_mode' : 'dark_mode' }}</i>
+    </button>
+  </div>
+</header> 

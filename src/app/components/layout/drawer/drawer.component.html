@@ -1,0 +1,23 @@
+<div class="drawer-backdrop" [class.drawer-backdrop--open]="isOpen$ | async" (click)="close()"></div>
+<div class="drawer" [class.drawer--open]="isOpen$ | async">
+  <div class="drawer__content">
+    <nav class="drawer__nav">
+      <a routerLink="/" class="drawer__link" (click)="close()">
+        <i class="material-icons">home</i>
+        Home
+      </a>
+      <a routerLink="/tokens" class="drawer__link" (click)="close()">
+        <i class="material-icons">palette</i>
+        Design Tokens
+      </a>
+      <a routerLink="/mapping" class="drawer__link" (click)="close()">
+        <i class="material-icons">compare_arrows</i>
+        Token Mapping
+      </a>
+      <a routerLink="/components" class="drawer__link" (click)="close()">
+        <i class="material-icons">widgets</i>
+        Components
+      </a>
+    </nav>
+  </div>
+</div> 

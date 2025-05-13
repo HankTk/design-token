@@ -9,21 +9,8 @@ import { SettingsComponent } from './components/settings/settings.component';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, HeaderComponent, DrawerComponent, SettingsComponent],
-  template: `
-    <app-header></app-header>
-    <app-drawer></app-drawer>
-    <app-settings></app-settings>
-    <main class="main-content">
-      <router-outlet></router-outlet>
-    </main>
-  `,
-  styles: [`
-    .main-content {
-      margin-top: 64px; // Header height
-      padding: var(--spacing-lg);
-      min-height: calc(100vh - 64px);
-    }
-  `]
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss']
 })
 export class AppComponent {
   title = 'design-token-app';
