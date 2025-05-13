@@ -155,3 +155,7 @@ src/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Screenshots
+
+![screenshot1](./documents/2025-05-13_10-38-49.png)
