@@ -1,0 +1,14 @@
+<button
+  [class]="getClass()"
+  [ngStyle]="getDynamicStyles()"
+  (click)="onClick($event)"
+  [disabled]="disabled || loading">
+  <span class="ax-button-content">
+    <ng-content></ng-content>
+  </span>
+  <span *ngIf="loading" class="ax-button-loader">
+    <span class="ax-button-loader-dot"></span>
+    <span class="ax-button-loader-dot"></span>
+    <span class="ax-button-loader-dot"></span>
+  </span>
+</button> 

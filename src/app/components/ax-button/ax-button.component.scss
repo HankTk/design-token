@@ -1,0 +1,123 @@
+.ax-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  font-family: var(--font-family-base);
+  transition: all var(--theme-transition-duration);
+  border-radius: var(--radius-md);
+  gap: var(--spacing-2);
+
+  // Base styles for all variants
+  &-primary {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+  }
+
+  &-secondary {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-secondary);
+  }
+
+  &-success {
+    background-color: var(--color-background-success);
+    color: var(--color-text-success);
+  }
+
+  &-warning {
+    background-color: var(--color-background-warning);
+    color: var(--color-text-warning);
+  }
+
+  &-danger {
+    background-color: var(--color-background-danger);
+    color: var(--color-text-danger);
+  }
+
+  &-information {
+    background-color: var(--color-background-information);
+    color: var(--color-text-information);
+  }
+
+  // Size classes
+  &-xs {
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+  }
+
+  &-sm {
+    padding: var(--spacing-2) var(--spacing-3);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+  }
+
+  &-md {
+    padding: var(--spacing-3) var(--spacing-4);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &-lg {
+    padding: var(--spacing-4) var(--spacing-5);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &-xl {
+    padding: var(--spacing-5) var(--spacing-6);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+  }
+
+  // Modifier classes
+  &-disabled {
+    pointer-events: none;
+  }
+
+  &-loading {
+    .ax-button-content {
+      visibility: hidden;
+    }
+  }
+
+  &-full {
+    width: 100%;
+  }
+
+  // Loading animation
+  &-loader {
+    position: absolute;
+    display: flex;
+    gap: var(--spacing-1);
+    align-items: center;
+    justify-content: center;
+
+    &-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: currentColor;
+      animation: button-loader 1.4s infinite ease-in-out both;
+
+      &:nth-child(1) {
+        animation-delay: -0.32s;
+      }
+
+      &:nth-child(2) {
+        animation-delay: -0.16s;
+      }
+    }
+  }
+}
+
+@keyframes button-loader {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+} 

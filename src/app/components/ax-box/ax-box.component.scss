@@ -1,0 +1,104 @@
+.ax-box {
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  font-family:     var(--font-family-base);
+  border-radius:   var(--radius-md);
+  cursor:          pointer;
+  transition:      all var(--theme-transition-duration);
+
+  // Variants
+  &-primary {
+    background-color: var(--color-background-primary);
+    color:           var(--color-text-primary);
+    font-weight:     var(--font-weight-semibold);
+    padding:         var(--spacing-lg);
+    font-size:       var(--font-size-lg);
+    border-radius:   var(--radius-lg);
+  }
+
+  &-secondary {
+    background-color: var(--color-background-secondary);
+    color:           var(--color-text-secondary);
+    font-weight:     var(--font-weight-normal);
+    padding:         var(--spacing-md);
+    font-size:       var(--font-size-base);
+    border-radius:   var(--radius-md);
+  }
+
+  &-success {
+    background-color: var(--color-background-success);
+    color:           var(--color-text-success);
+    font-weight:     var(--font-weight-medium);
+    padding:         var(--spacing-md);
+    font-size:       var(--font-size-base);
+    border-radius:   var(--radius-md);
+  }
+
+  &-warning {
+    background-color: var(--color-background-warning);
+    color:           var(--color-text-warning);
+    font-weight:     var(--font-weight-medium);
+    padding:         var(--spacing-md);
+    font-size:       var(--font-size-base);
+    border-radius:   var(--radius-md);
+  }
+
+  &-danger {
+    background-color: var(--color-background-danger);
+    color:           var(--color-text-danger);
+    font-weight:     var(--font-weight-medium);
+    padding:         var(--spacing-md);
+    font-size:       var(--font-size-base);
+    border-radius:   var(--radius-md);
+  }
+
+  &-information {
+    background-color: var(--color-background-information);
+    color:           var(--color-text-information);
+    font-weight:     var(--font-weight-medium);
+    padding:         var(--spacing-md);
+    font-size:       var(--font-size-base);
+    border-radius:   var(--radius-md);
+  }
+
+  // Width classes
+  &-w-xs    { width: var(--width-1); }
+  &-w-sm    { width: var(--width-2); }
+  &-w-md    { width: var(--width-3); }
+  &-w-lg    { width: var(--width-4); }
+  &-w-xl    { width: var(--width-5); }
+  &-w-xxl   { width: var(--width-6); }
+  &-w-xxxl  { width: var(--width-7); }
+  &-w-full  { width: 100%; }
+
+  // Height classes
+  &-h-xs    { height: var(--height-1); }
+  &-h-sm    { height: var(--height-2); }
+  &-h-md    { height: var(--height-3); }
+  &-h-lg    { height: var(--height-4); }
+  &-h-xl    { height: var(--height-5); }
+  &-h-xxl   { height: var(--height-6); }
+  &-h-xxxl  { height: var(--height-7); }
+  &-h-full  { height: 100%; }
+
+  // Font sizes based on height
+  &-h-xs    { font-size: var(--font-size-xs); }
+  &-h-sm    { font-size: var(--font-size-sm); }
+  &-h-md    { font-size: var(--font-size-base); }
+  &-h-lg    { font-size: var(--font-size-lg); }
+  &-h-xl    { font-size: var(--font-size-xl); }
+  &-h-xxl   { font-size: var(--font-size-2xl); }
+  &-h-xxxl  { font-size: var(--font-size-3xl); }
+  &-h-full  { font-size: var(--font-size-4xl); }
+
+  // Padding based on height
+  &-h-xs    { padding: var(--spacing-xs); }
+  &-h-sm    { padding: var(--spacing-sm); }
+  &-h-md    { padding: var(--spacing-md); }
+  &-h-lg    { padding: var(--spacing-lg); }
+  &-h-xl    { padding: var(--spacing-xl); }
+  &-h-xxl   { padding: var(--spacing-xxl); }
+  &-h-xxxl  { padding: var(--spacing-xxxl); }
+  &-h-full  { padding: var(--spacing-xxxl); }
+}

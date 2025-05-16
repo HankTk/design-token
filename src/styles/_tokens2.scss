@@ -1,0 +1,279 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+/**
+ * Design Token Documentation
+ * 
+ * This file contains all design tokens used throughout the application.
+ * Tokens are organized into categories and can be themed using the [data-theme] attribute.
+ * 
+ * Usage:
+ * - Use CSS custom properties directly in stylesheets
+ * - Use TypeScript constants in components
+ * - Theme switching is handled by adding data-theme="dark" to the root element
+ */
+
+:root {
+  /* ==========================================================================
+     Theme Configuration
+     ========================================================================== */
+  --theme-transition-duration: 0.3s;
+  
+  /* ==========================================================================
+     Font Family Tokens
+     ========================================================================== */
+  --font-family-base: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  /* ==========================================================================
+     Base Color Tokens - Light Theme
+     Raw color values that serve as the foundation for our color system
+     ========================================================================== */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  --color-blue-100:    #dbeafe;
+  --color-blue-200:    #bfdbfe;
+  --color-blue-300:    #93c5fd;
+  --color-blue-400:    #60a5fa;
+  --color-blue-500:    #3b82f6;
+  --color-blue-600:    #2563eb;
+  --color-blue-700:    #1d4ed8;
+  --color-blue-800:    #1e40af;
+  --color-blue-900:    #1e3a8a;
+
+  --color-gray-100:    #f3f4f6;
+  --color-gray-200:    #e5e7eb;
+  --color-gray-300:    #d1d5db;
+  --color-gray-400:    #9ca3af;
+  --color-gray-500:    #6b7280;
+  --color-gray-600:    #4b5563;
+  --color-gray-700:    #374151;
+  --color-gray-800:    #1f2937;
+  --color-gray-900:    #111827;
+
+  --color-green-100:   #dcfce7;
+  --color-green-200:   #bbf7d0;
+  --color-green-300:   #86efac;
+  --color-green-400:   #4ade80;
+  --color-green-500:   #22c55e;
+  --color-green-600:   #16a34a;
+  --color-green-700:   #15803d;
+  --color-green-800:   #166534;
+  --color-green-900:   #14532d;
+
+  --color-yellow-100:  #fef9c3;
+  --color-yellow-200:  #fef08a;
+  --color-yellow-300:  #fde047;
+  --color-yellow-400:  #facc15;
+  --color-yellow-500:  #eab308;
+  --color-yellow-600:  #ca8a04;
+  --color-yellow-700:  #a16207;
+  --color-yellow-800:  #854d0e;
+  --color-yellow-900:  #713f12;
+
+  --color-red-100:     #fee2e2;
+  --color-red-200:     #fecaca;
+  --color-red-300:     #fca5a5;
+  --color-red-400:     #f87171;
+  --color-red-500:     #ef4444;
+  --color-red-600:     #dc2626;
+  --color-red-700:     #b91c1c;
+  --color-red-800:     #991b1b;
+  --color-red-900:     #7f1d1d;
+
+  --color-sky-100:     #e0f2fe;
+  --color-sky-200:     #bae6fd;
+  --color-sky-300:     #7dd3fc;
+  --color-sky-400:     #38bdf8;
+  --color-sky-500:     #0ea5e9;
+  --color-sky-600:     #0284c7;
+  --color-sky-700:     #0369a1;
+  --color-sky-800:     #075985;
+  --color-sky-900:     #0c4a6e;
+
+  --color-purple-100:  #f3e8ff;
+  --color-purple-200:  #e9d5ff;
+  --color-purple-300:  #d8b4fe;
+  --color-purple-400:  #c084fc;
+  --color-purple-500:  #8b5cf6;
+  --color-purple-600:  #7c3aed;
+  --color-purple-700:  #6d28d9;
+  --color-purple-800:  #5b21b6;
+  --color-purple-900:  #4c1d95;
+
+  --color-pink-100:    #fce7f3;
+  --color-pink-200:    #fbcfe8;
+  --color-pink-300:    #f9a8d4;
+  --color-pink-400:    #f472b6;
+  --color-pink-500:    #ec4899;
+  --color-pink-600:    #db2777;
+  --color-pink-700:    #be185d;
+  --color-pink-800:    #9d174d;
+  --color-pink-900:    #831843;
+
+  --color-orange-100:  #ffedd5;
+  --color-orange-200:  #fed7aa;
+  --color-orange-300:  #fdba74;
+  --color-orange-400:  #fb923c;
+  --color-orange-500:  #f97316;
+  --color-orange-600:  #ea580c;
+  --color-orange-700:  #c2410c;
+  --color-orange-800:  #9a3412;
+  --color-orange-900:  #7c2d12;
+
+  --color-teal-100:    #ccfbf1;
+  --color-teal-200:    #99f6e4;
+  --color-teal-300:    #5eead4;
+  --color-teal-400:    #2dd4bf;
+  --color-teal-500:    #0d9488;
+  --color-teal-600:    #0d9488;
+  --color-teal-700:    #0f766e;
+  --color-teal-800:    #115e59;
+  --color-teal-900:    #134e4a;
+
+  --color-lime-100:    #ecfccb;
+  --color-lime-200:    #d9f99d;
+  --color-lime-300:    #bef264;
+  --color-lime-400:    #a3e635;
+  --color-lime-500:    #84cc16;
+  --color-lime-600:    #65a30d;
+  --color-lime-700:    #4d7c0f;
+  --color-lime-800:    #3f6212;
+  --color-lime-900:    #365314;
+
+  /* ==========================================================================
+     Semantic Color Tokens - Light Theme
+     Purpose-based color naming that maps to base colors
+     ========================================================================== */
+  --color-primary:     var(--color-blue-500);
+  --color-secondary:   var(--color-gray-500);
+  --color-success:     var(--color-green-500);
+  --color-warning:     var(--color-yellow-500);
+  --color-danger:      var(--color-red-500);
+  --color-information: var(--color-sky-500);
+
+  /* ==========================================================================
+     Background Color Tokens - Light Theme
+     Background colors derived from semantic colors
+     ========================================================================== */
+  --color-background-primary:     var(--color-primary);
+  --color-background-secondary:   var(--color-secondary);
+  --color-background-success:     var(--color-success);
+  --color-background-warning:     var(--color-warning);
+  --color-background-danger:      var(--color-danger);
+  --color-background-information: var(--color-information);
+  --color-background-white:       var(--color-white);
+  --color-background-black:       var(--color-black);
+  --color-background-base:        var(--color-gray-100);
+  --color-background-elevated:    var(--color-white);
+
+  /* ==========================================================================
+     Text Color Tokens - Light Theme
+     Text colors for different background contexts
+     ========================================================================== */
+  --color-text-primary:     var(--color-white);
+  --color-text-secondary:   var(--color-white);
+  --color-text-success:     var(--color-white);
+  --color-text-warning:     var(--color-black);
+  --color-text-danger:      var(--color-white);
+  --color-text-information: var(--color-white);
+  --color-text-white:       var(--color-white);
+  --color-text-black:       var(--color-black);
+  --color-text-base:        var(--color-gray-900);
+  --color-text-muted:       var(--color-gray-600);
+
+  /* ==========================================================================
+     Spacing Tokens
+     Consistent spacing values throughout the application
+     ========================================================================== */
+  --spacing-1:  0.0625rem;  /* 1px - base unit */
+  --spacing-2:  0.125rem;   /* 2px */
+  --spacing-3:  0.1875rem;  /* 3px */
+  --spacing-4:  0.3125rem;  /* 5px */
+  --spacing-5:  0.5rem;     /* 8px */
+  --spacing-6:  0.8125rem;  /* 13px */
+  --spacing-8:  1.3125rem;  /* 21px */
+  --spacing-10: 2.125rem;   /* 34px */
+  --spacing-12: 3.4375rem;  /* 55px */
+  --spacing-16: 5.5625rem;  /* 89px */
+
+  /* ==========================================================================
+     Width Tokens
+     Consistent width values for components
+     ========================================================================== */
+  --width-1: 2rem;        /* 32px */
+  --width-2: 4rem;        /* 64px */
+  --width-3: 6rem;        /* 96px */
+  --width-4: 10rem;       /* 160px */
+  --width-5: 16rem;       /* 256px */
+  --width-6: 26rem;       /* 416px */
+  --width-7: 42rem;       /* 672px */
+
+  /* ==========================================================================
+     Height Tokens
+     Consistent height values for components
+     ========================================================================== */
+  --height-1: 1rem;        /* 16px */
+  --height-2: 2rem;        /* 32px */
+  --height-3: 3rem;        /* 48px */
+  --height-4: 4rem;        /* 64px */
+  --height-5: 5rem;        /* 80px */
+  --height-6: 6rem;        /* 96px */
+  --height-7: 7rem;        /* 112px */
+  --height-8: 8rem;        /* 128px */
+  --height-9: 9rem;        /* 144px */
+  --height-10: 10rem;      /* 160px */
+
+  /* ==========================================================================
+     Typography Tokens
+     Font sizes, weights, and line heights
+     ========================================================================== */
+  --font-size-xs:   0.25rem;    /* 4px */
+  --font-size-sm:   0.5rem;     /* 8px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg:   1.25rem;    /* 20px */
+  --font-size-xl:   1.5rem;     /* 24px */
+  --font-size-2xl:  1.75rem;    /* 28px */
+  --font-size-3xl:  2rem;       /* 32px */
+  --font-size-4xl:  2.25rem;    /* 36px */
+
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  --line-height-tight:    1.25;
+  --line-height-normal:   1.5;
+  --line-height-relaxed:  1.75;
+
+  /* ==========================================================================
+     Border Radius Tokens
+     Consistent border radius values
+     ========================================================================== */
+  --radius-sm:   0.125rem;  /* 2px */
+  --radius-md:   0.375rem;  /* 6px */
+  --radius-lg:   0.5rem;    /* 8px */
+  --radius-xl:   0.75rem;   /* 12px */
+  --radius-2xl:  1rem;      /* 16px */
+  --radius-full: 9999px;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  /* Base Colors - Dark Theme */
+  --color-background-base:        var(--color-gray-900);
+  --color-background-elevated:    var(--color-gray-800);
+  
+  /* Text Colors - Dark Theme */
+  --color-text-base:        var(--color-gray-100);
+  --color-text-muted:       var(--color-gray-400);
+}
+
+/* Set default font family for the entire application */
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background-base);
+  color: var(--color-text-base);
+  transition: background-color var(--theme-transition-duration),
+              color var(--theme-transition-duration);
+}

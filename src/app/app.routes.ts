@@ -14,6 +14,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/mapping/mapping.component').then(m => m.MappingComponent)
   },
   {
+    path: 'buttons',
+    loadComponent: () => import('./pages/buttons/buttons.component').then(m => m.ButtonsComponent)
+  },
+  {
     path: 'components',
     loadComponent: () => import('./pages/components/components.component').then(m => m.ComponentsComponent)
   },
