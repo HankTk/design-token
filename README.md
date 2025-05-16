@@ -82,6 +82,76 @@ src/
 └── index.html       # Main HTML file
 ```
 
+## Design Token System
+
+The application uses a comprehensive design token system defined in `src/styles/_tokens.scss`. This system provides a single source of truth for all design values used throughout the application.
+
+### Token Categories
+
+1. **Colors**
+   - Base colors (blue, gray, green, yellow, red, etc.)
+   - Semantic colors (primary, secondary, success, warning, danger)
+   - Background colors
+   - Text colors
+
+2. **Typography**
+   - Font families
+   - Font sizes
+   - Font weights
+   - Line heights
+
+3. **Spacing**
+   - Consistent spacing scale
+   - Component-specific spacing values
+
+4. **Dimensions**
+   - Width tokens
+   - Height tokens
+
+### Usage
+
+Design tokens are implemented as CSS custom properties (variables) and can be used in two ways:
+
+1. **In SCSS/CSS:**
+```scss
+.my-component {
+  color: var(--color-primary);
+  padding: var(--spacing-md);
+  font-size: var(--font-size-base);
+}
+```
+
+2. **In TypeScript:**
+```typescript
+import { getComputedStyle } from 'window';
+
+const primaryColor = getComputedStyle(document.documentElement)
+  .getPropertyValue('--color-primary');
+```
+
+### Theming
+
+The design token system supports theming through the `[data-theme]` attribute. To switch themes:
+
+```typescript
+// Switch to dark theme
+document.documentElement.setAttribute('data-theme', 'dark');
+
+// Switch to light theme
+document.documentElement.setAttribute('data-theme', 'light');
+```
+
+### Token Categories and Values
+
+The token system includes:
+
+- **Color System**: 10 shades for each color (100-900)
+- **Spacing Scale**: From 1px to 89px
+- **Typography Scale**: From 4px to 36px
+- **Component Dimensions**: Predefined width and height values
+
+For a complete list of available tokens, refer to `src/styles/_tokens.scss`.
+
 ## Contributing
 
 1. Fork the repository
