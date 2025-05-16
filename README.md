@@ -30,26 +30,12 @@ By using design tokens, teams can maintain consistency across their products and
   - Spacing system visualization
   - Interactive token documentation
 
-- **Integration Capabilities**
-  - Export tokens to various formats (CSS, SCSS, JSON)
-  - Generate design system documentation
-  - Integration with popular design tools
-  - API for programmatic access
-
-- **Modern Architecture**
-  - Built with Angular 19.x
-  - Responsive and accessible design
-  - Real-time updates and collaboration
-  - Performance optimized
-
 ## Tech Stack
 
-- **Frontend Framework**: Angular 19.x
-- **UI Components**: Angular Material
-- **State Management**: NgRx
-- **Styling**: SCSS with CSS Custom Properties
-- **Testing**: Jest and Cypress
-- **Build Tools**: Angular CLI, Webpack
+- **Frontend Framework**: Angular 19.2.0
+- **Styling**: SCSS
+- **Testing**: Jasmine and Karma
+- **Build Tools**: Angular CLI 19.2.11
 - **Package Manager**: npm
 
 ## Prerequisites
@@ -71,58 +57,29 @@ cd design-token-app
 npm install
 ```
 
-3. Configure environment:
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
-
-4. Start the development server:
+3. Start the development server:
 ```bash
 npm start
 ```
 
 The application will be available at `http://localhost:4200/`.
 
-## Project Configuration
-
-### Environment Variables
-
-Create a `.env` file in the root directory with the following variables:
-
-```env
-API_URL=your_api_url
-AUTH_ENABLED=true
-FEATURE_FLAGS={"newUI":true}
-```
-
-### Available Scripts
+## Available Scripts
 
 - `npm start` - Starts the development server
 - `npm run build` - Builds the project for production
 - `npm run test` - Runs unit tests
 - `npm run watch` - Builds the project and watches for changes
-- `npm run lint` - Runs linting
-- `npm run e2e` - Runs end-to-end tests
-- `npm run storybook` - Starts Storybook for component development
 
 ## Project Structure
 
 ```
 src/
-├── app/
-│   ├── core/           # Core module (services, guards, interceptors)
-│   ├── shared/         # Shared module (components, directives, pipes)
-│   ├── features/       # Feature modules
-│   │   ├── tokens/     # Token management feature
-│   │   ├── preview/    # Token preview feature
-│   │   └── settings/   # Application settings
-│   └── store/          # State management
-├── assets/             # Static assets
-│   ├── icons/          # SVG icons
-│   └── styles/         # Global styles
-├── environments/       # Environment configurations
-└── stories/           # Storybook stories
+├── app/              # Application components and modules
+├── styles/           # Global styles and SCSS files
+├── styles.scss       # Main stylesheet
+├── main.ts          # Application entry point
+└── index.html       # Main HTML file
 ```
 
 ## Contributing
@@ -149,8 +106,6 @@ src/
 - [Angular Documentation](https://angular.dev)
 - [Angular CLI Overview](https://angular.dev/tools/cli)
 - [Design Tokens Documentation](https://design-tokens.github.io/community-group/format/)
-- [Angular Material](https://material.angular.io)
-- [NgRx Documentation](https://ngrx.io/docs)
 
 ## License
 
@@ -159,3 +114,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Screenshots
 
 ![screenshot1](./documents/2025-05-13_10-38-49.png)
+![screenshot2](./documents/2025-05-16_13-03-23.png)
