@@ -1,0 +1,28 @@
+/* Typography Tokens */
+:root {
+  /* Font Sizes - Rem-based scale */
+  --font-size-xs: 0.25rem;    /* 4px */
+  --font-size-sm: 0.5rem;     /* 8px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 1.75rem;   /* 28px */
+  --font-size-3xl: 2rem;      /* 32px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+
+  /* Font Sizes - Pixel-based scale */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight:           1.25;
+  --line-height-normal:          1.5;
+  --line-height-relaxed:         1.75;
+
+}

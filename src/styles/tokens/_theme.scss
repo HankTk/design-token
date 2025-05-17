@@ -1,0 +1,43 @@
+/* Theme Configuration */
+
+/* ==========================================================================
+  Light Theme Tokens
+  ========================================================================== */
+:root {
+  --primary-color:               var(--color-blue-500);
+  --secondary-color:             var(--color-gray-500);
+  --background-color:            var(--color-gray-50);
+  --surface-color:               var(--color-gray-100);
+  --text-color:                  var(--color-gray-900);
+  --text-secondary-color:        var(--color-gray-600);
+  --border-color:                var(--color-gray-200);
+  --error-color:                 #f44336;
+  --success-color:               #4caf50;
+  --warning-color:               #ff9800;
+  --info-color:                  var(--color-blue-500);
+}
+
+/* ==========================================================================
+  Dark Theme Tokens
+  ========================================================================== */
+[data-theme="dark"] {
+  --primary-color:               var(--color-blue-300);
+  --secondary-color:             var(--color-gray-400);
+  --background-color:            var(--color-gray-900);
+  --surface-color:               var(--color-gray-800);
+  --text-color:                  var(--color-gray-50);
+  --text-secondary-color:        var(--color-gray-400);
+  --border-color:                var(--color-gray-700);
+  --error-color:                 #ef5350;
+  --success-color:               #66bb6a;
+  --warning-color:               #ffa726;
+  --info-color:                  var(--color-blue-300);
+
+  /* Base Colors - Dark Theme */
+  --color-background-base:       var(--color-gray-900);
+  --color-background-elevated:   var(--color-gray-800);
+
+  /* Text Colors - Dark Theme */
+  --color-text-base:             var(--color-gray-100);
+  --color-text-muted:            var(--color-gray-400);
+}
