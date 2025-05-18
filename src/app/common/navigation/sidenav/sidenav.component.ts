@@ -7,10 +7,10 @@ import { DrawerService } from '../../../services/drawer.service';
   selector: 'app-drawer',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './drawer.component.html',
-  styleUrls: ['./drawer.component.scss']
+  templateUrl: './sidenav.component.html',
+  styleUrls: ['./sidenav.component.scss']
 })
-export class DrawerComponent {
+export class SidenavComponent {
   isOpen$;
 
   constructor(private drawerService: DrawerService) {
@@ -20,4 +20,4 @@ export class DrawerComponent {
   close() {
     this.drawerService.close();
   }
-} 
+}

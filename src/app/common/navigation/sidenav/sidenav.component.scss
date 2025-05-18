@@ -1,58 +1,63 @@
+// Backdrop styles
 .drawer-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position:         fixed;
+  top:             0;
+  left:            0;
+  right:           0;
+  bottom:          0;
   background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity var(--transition-normal), visibility var(--transition-normal);
-  z-index: 800;
+  opacity:         0;
+  visibility:      hidden;
+  transition:      opacity var(--transition-normal), visibility var(--transition-normal);
+  z-index:         800;
 }
 
 .drawer-backdrop--open {
-  opacity: 1;
-  visibility: visible;
+  opacity:     1;
+  visibility:  visible;
 }
 
+// Drawer container styles
 .drawer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 280px;
+  position:         fixed;
+  top:             0;
+  left:            0;
+  bottom:          0;
+  width:           280px;
   background-color: var(--surface-color);
-  box-shadow: var(--shadow-md);
-  transform: translateX(-100%);
-  transition: transform var(--transition-normal);
-  z-index: 900;
+  box-shadow:      var(--shadow-md);
+  transform:       translateX(-100%);
+  transition:      transform var(--transition-normal);
+  z-index:         900;
 }
 
 .drawer--open {
-  transform: translateX(0);
+  transform:  translateX(0);
 }
 
+// Drawer content styles
 .drawer__content {
-  padding: var(--spacing-lg);
+  padding:    var(--spacing-lg);
   margin-top: 64px; // Header height
 }
 
+// Navigation styles
 .drawer__nav {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+  display:          flex;
+  flex-direction:   column;
+  gap:             var(--spacing-sm);
 }
 
+// Link styles
 .drawer__link {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-md);
-  color: var(--text-color);
+  display:          flex;
+  align-items:     center;
+  gap:             var(--spacing-md);
+  padding:         var(--spacing-md);
+  color:           var(--text-color);
   text-decoration: none;
-  border-radius: var(--border-radius-sm);
-  transition: background-color var(--transition-fast);
+  border-radius:   var(--border-radius-sm);
+  transition:      background-color var(--transition-fast);
 
   &:hover {
     background-color: var(--border-color);
