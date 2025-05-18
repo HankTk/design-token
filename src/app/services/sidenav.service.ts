@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class DrawerService {
+export class SidenavService {
   private isOpenSubject = new BehaviorSubject<boolean>(false);
   isOpen$ = this.isOpenSubject.asObservable();
 
@@ -15,4 +15,4 @@ export class DrawerService {
   close() {
     this.isOpenSubject.next(false);
   }
-} 
+}

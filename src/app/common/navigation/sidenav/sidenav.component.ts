@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { DrawerService } from '../../../services/drawer.service';
+import { SidenavService } from '../../../services/sidenav.service';
 
 @Component({
   selector: 'app-drawer',
@@ -13,7 +13,7 @@ import { DrawerService } from '../../../services/drawer.service';
 export class SidenavComponent {
   isOpen$;
 
-  constructor(private drawerService: DrawerService) {
+  constructor(private drawerService: SidenavService) {
     this.isOpen$ = this.drawerService.isOpen$;
   }
 
