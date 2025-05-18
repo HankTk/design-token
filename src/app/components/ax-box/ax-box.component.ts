@@ -1,7 +1,7 @@
 import { Component, Input, inject } from '@angular/core';
 import { NgStyle, CommonModule } from '@angular/common';
 import { VariantType } from '../../services/styles.service';
-import { Height, Width } from '../../constants/dimensions';
+import { Height, Width } from '../../common/tokens/dimensions';
 @Component({
   selector: 'ax-box',
   templateUrl: './ax-box.component.html',

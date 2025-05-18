@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/layout/header/header.component';
-import { DrawerComponent } from './components/layout/drawer/drawer.component';
-import { SettingsComponent } from './components/settings/settings.component';
+import { HeaderComponent } from './common/navigation/header/header.component';
+import { DrawerComponent } from './common/navigation/drawer/drawer.component';
+import { SettingsComponent } from './common/navigation/settings/settings.component';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +14,4 @@ import { SettingsComponent } from './components/settings/settings.component';
 })
 export class AppComponent {
   title = 'design-token-app';
-} 
+}

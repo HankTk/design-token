@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-token-mapping',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './token-mapping.component.html',
-  styleUrls: ['./token-mapping.component.scss']
+  templateUrl: './ex-mapping.component.html',
+  styleUrls: ['./ex-mapping.component.scss']
 })
-export class TokenMappingComponent {} 
+export class ExMappingComponent {}

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { COLOR_TOKENS, SPACING_TOKENS, TYPOGRAPHY_TOKENS, RADIUS_TOKENS } from '../constants';
-import { WIDTH_TOKENS, HEIGHT_TOKENS } from '../constants/dimensions';
+import { COLOR_TOKENS, SPACING_TOKENS, TYPOGRAPHY_TOKENS, RADIUS_TOKENS } from '../common/tokens';
+import { WIDTH_TOKENS, HEIGHT_TOKENS } from '../common/tokens/dimensions';
 
 export type VariantType = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'information';
 export type SizeType = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | 'full';
 
-type CSSProperty = 
+type CSSProperty =
   | 'background-color'
   | 'color'
   | 'padding'

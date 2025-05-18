@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ThemeService } from '../../services/theme.service';
-import { SettingsService } from '../../services/settings.service';
+import { ThemeService } from '../../../services/theme.service';
+import { SettingsService } from '../../../services/settings.service';
 
 @Component({
   selector: 'app-settings',
@@ -29,4 +29,4 @@ export class SettingsComponent {
   setTheme(theme: 'light' | 'dark') {
     this.themeService.setTheme(theme);
   }
-} 
+}

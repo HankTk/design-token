@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StylesService } from '../../services/styles.service';
-import { Width, Height, WIDTH_TOKENS, HEIGHT_TOKENS } from '../../constants/dimensions';
+import { Width, Height, WIDTH_TOKENS, HEIGHT_TOKENS } from '../../common/tokens/dimensions';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'information';
 
@@ -16,7 +16,7 @@ type HeightTokenKey = keyof typeof HEIGHT_TOKENS;
   templateUrl: './ax-button.component.html',
   styleUrls: ['./ax-button.component.scss']
 })
-export class AxButtonComponent 
+export class AxButtonComponent
 {
   @Input() variant: ButtonVariant = 'primary';
   @Input() width?: Width;
@@ -31,15 +31,15 @@ export class AxButtonComponent
   getClass(): string
   {
     const classes = ['ax-button'];
-    
+
     // Class-based approach for variant
     classes.push(`ax-button-${this.variant}`);
-    
+
     // Class-based approach for modifiers
     if (this.disabled) classes.push('ax-button-disabled');
     if (this.loading) classes.push('ax-button-loading');
     if (this.fullWidth) classes.push('ax-button-full');
-    
+
     return classes.join(' ');
   }
 
@@ -47,7 +47,7 @@ export class AxButtonComponent
   getDynamicStyles()
   {
     const baseStyles = this.stylesService.getVariantStyles(this.variant);
-    
+
     return {
       ...baseStyles,
       // Add any additional dynamic styles here
@@ -67,4 +67,4 @@ export class AxButtonComponent
     this.clicked.emit();
   }
 
-} 
+}
