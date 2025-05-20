@@ -6,38 +6,38 @@
 
 :root {
   /* Legacy Transitions */
-  --theme-transition-duration: 0.3s;
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
+  --theme-transition-duration:       0.3s;
+  --transition-fast:                 0.2s ease;
+  --transition-normal:               0.3s ease;
+  --transition-slow:                 0.5s ease;
 
   /* Material Design 3 Transition Tokens */
   /* Duration */
-  --md-duration-shortest: 150ms;
-  --md-duration-shorter: 200ms;
-  --md-duration-short: 250ms;
-  --md-duration-standard: 300ms;
-  --md-duration-complex: 375ms;
-  --md-duration-entering: 225ms;
-  --md-duration-exiting: 195ms;
+  --md-duration-shortest:            150ms;
+  --md-duration-shorter:             200ms;
+  --md-duration-short:               250ms;
+  --md-duration-standard:            300ms;
+  --md-duration-complex:             375ms;
+  --md-duration-entering:            225ms;
+  --md-duration-exiting:             195ms;
 
   /* Material Design 3 Easing */
-  --md-easing-linear: cubic-bezier(0, 0, 1, 1);
-  --md-easing-standard: cubic-bezier(0.2, 0, 0, 1);
-  --md-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --md-easing-linear:                cubic-bezier(0, 0, 1, 1);
+  --md-easing-standard:              cubic-bezier(0.2, 0, 0, 1);
+  --md-easing-emphasized:            cubic-bezier(0.2, 0, 0, 1);
   --md-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
   --md-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
 
   /* Material Design 3 Common Transition Patterns */
-  --md-transition-standard: var(--md-duration-standard) var(--md-easing-standard);
-  --md-transition-emphasized: var(--md-duration-complex) var(--md-easing-emphasized);
-  --md-transition-decelerate: var(--md-duration-complex) var(--md-easing-emphasized-decelerate);
-  --md-transition-accelerate: var(--md-duration-short) var(--md-easing-emphasized-accelerate);
+  --md-transition-standard:          var(--md-duration-standard) var(--md-easing-standard);
+  --md-transition-emphasized:        var(--md-duration-complex) var(--md-easing-emphasized);
+  --md-transition-decelerate:        var(--md-duration-complex) var(--md-easing-emphasized-decelerate);
+  --md-transition-accelerate:        var(--md-duration-short) var(--md-easing-emphasized-accelerate);
 
   /* Material Design 3 Component-specific Transitions */
-  --md-transition-button: var(--md-transition-standard);
-  --md-transition-card: var(--md-transition-standard);
-  --md-transition-dialog: var(--md-transition-emphasized);
-  --md-transition-fab: var(--md-transition-emphasized);
-  --md-transition-nav-drawer: var(--md-transition-emphasized);
+  --md-transition-button:            var(--md-transition-standard);
+  --md-transition-card:              var(--md-transition-standard);
+  --md-transition-dialog:            var(--md-transition-emphasized);
+  --md-transition-fab:               var(--md-transition-emphasized);
+  --md-transition-nav-drawer:        var(--md-transition-emphasized);
 }

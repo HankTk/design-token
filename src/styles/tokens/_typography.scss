@@ -1,110 +1,106 @@
 /* Typography Tokens */
 :root {
   /* Font Sizes - Rem-based scale */
-  --font-size-xs: 0.25rem;    /* 4px */
-  --font-size-sm: 0.5rem;     /* 8px */
-  --font-size-base: 1rem;     /* 16px */
-  --font-size-lg: 1.25rem;    /* 20px */
-  --font-size-xl: 1.5rem;     /* 24px */
-  --font-size-2xl: 1.75rem;   /* 28px */
-  --font-size-3xl: 2rem;      /* 32px */
-  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-xs:    0.25rem;  /* 4px */
+  --font-size-sm:    0.5rem;   /* 8px */
+  --font-size-base:  1rem;     /* 16px */
+  --font-size-lg:    1.25rem;  /* 20px */
+  --font-size-xl:    1.5rem;   /* 24px */
+  --font-size-2xl:   1.75rem;  /* 28px */
+  --font-size-3xl:   2rem;     /* 32px */
+  --font-size-4xl:   2.25rem;  /* 36px */
 
-  /* Font Sizes - Pixel-based scale */
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-md: 16px;
-  --font-size-lg: 20px;
+  /* Font Weights */
+  --font-weight-normal:    400;
+  --font-weight-medium:    500;
+  --font-weight-semibold:  600;
+  --font-weight-bold:      700;
 
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
-  --line-height-tight: 1.25;
-  --line-height-normal: 1.5;
-  --line-height-relaxed: 1.75;
+  /* Line Heights */
+  --line-height-tight:     1.25;
+  --line-height-normal:    1.5;
+  --line-height-relaxed:   1.75;
 
   /* Material Design 3 Typography Tokens */
   /* Display */
-  --md-display-large-size: 57px;
+  --md-display-large-size:        57px;
   --md-display-large-line-height: 64px;
-  --md-display-large-weight: 400;
-  --md-display-large-tracking: -0.25px;
+  --md-display-large-weight:      400;
+  --md-display-large-tracking:    -0.25px;
 
-  --md-display-medium-size: 45px;
+  --md-display-medium-size:        45px;
   --md-display-medium-line-height: 52px;
-  --md-display-medium-weight: 400;
-  --md-display-medium-tracking: 0px;
+  --md-display-medium-weight:      400;
+  --md-display-medium-tracking:    0px;
 
-  --md-display-small-size: 36px;
+  --md-display-small-size:        36px;
   --md-display-small-line-height: 44px;
-  --md-display-small-weight: 400;
-  --md-display-small-tracking: 0px;
+  --md-display-small-weight:      400;
+  --md-display-small-tracking:    0px;
 
   /* Headline */
-  --md-headline-large-size: 32px;
+  --md-headline-large-size:        32px;
   --md-headline-large-line-height: 40px;
-  --md-headline-large-weight: 400;
-  --md-headline-large-tracking: 0px;
+  --md-headline-large-weight:      400;
+  --md-headline-large-tracking:    0px;
 
-  --md-headline-medium-size: 28px;
+  --md-headline-medium-size:        28px;
   --md-headline-medium-line-height: 36px;
-  --md-headline-medium-weight: 400;
-  --md-headline-medium-tracking: 0px;
+  --md-headline-medium-weight:      400;
+  --md-headline-medium-tracking:    0px;
 
-  --md-headline-small-size: 24px;
+  --md-headline-small-size:        24px;
   --md-headline-small-line-height: 32px;
-  --md-headline-small-weight: 400;
-  --md-headline-small-tracking: 0px;
+  --md-headline-small-weight:      400;
+  --md-headline-small-tracking:    0px;
 
   /* Title */
-  --md-title-large-size: 22px;
+  --md-title-large-size:        22px;
   --md-title-large-line-height: 28px;
-  --md-title-large-weight: 400;
-  --md-title-large-tracking: 0px;
+  --md-title-large-weight:      400;
+  --md-title-large-tracking:    0px;
 
-  --md-title-medium-size: 16px;
+  --md-title-medium-size:        16px;
   --md-title-medium-line-height: 24px;
-  --md-title-medium-weight: 500;
-  --md-title-medium-tracking: 0.15px;
+  --md-title-medium-weight:      500;
+  --md-title-medium-tracking:    0.15px;
 
-  --md-title-small-size: 14px;
+  --md-title-small-size:        14px;
   --md-title-small-line-height: 20px;
-  --md-title-small-weight: 500;
-  --md-title-small-tracking: 0.1px;
+  --md-title-small-weight:      500;
+  --md-title-small-tracking:    0.1px;
 
   /* Label */
-  --md-label-large-size: 14px;
+  --md-label-large-size:        14px;
   --md-label-large-line-height: 20px;
-  --md-label-large-weight: 500;
-  --md-label-large-tracking: 0.1px;
+  --md-label-large-weight:      500;
+  --md-label-large-tracking:    0.1px;
 
-  --md-label-medium-size: 12px;
+  --md-label-medium-size:        12px;
   --md-label-medium-line-height: 16px;
-  --md-label-medium-weight: 500;
-  --md-label-medium-tracking: 0.5px;
+  --md-label-medium-weight:      500;
+  --md-label-medium-tracking:    0.5px;
 
-  --md-label-small-size: 11px;
+  --md-label-small-size:        11px;
   --md-label-small-line-height: 16px;
-  --md-label-small-weight: 500;
-  --md-label-small-tracking: 0.5px;
+  --md-label-small-weight:      500;
+  --md-label-small-tracking:    0.5px;
 
   /* Body */
-  --md-body-large-size: 16px;
+  --md-body-large-size:        16px;
   --md-body-large-line-height: 24px;
-  --md-body-large-weight: 400;
-  --md-body-large-tracking: 0.5px;
+  --md-body-large-weight:      400;
+  --md-body-large-tracking:    0.5px;
 
-  --md-body-medium-size: 14px;
+  --md-body-medium-size:        14px;
   --md-body-medium-line-height: 20px;
-  --md-body-medium-weight: 400;
-  --md-body-medium-tracking: 0.25px;
+  --md-body-medium-weight:      400;
+  --md-body-medium-tracking:    0.25px;
 
-  --md-body-small-size: 12px;
+  --md-body-small-size:        12px;
   --md-body-small-line-height: 16px;
-  --md-body-small-weight: 400;
-  --md-body-small-tracking: 0.4px;
+  --md-body-small-weight:      400;
+  --md-body-small-tracking:    0.4px;
 
   /* Font Family */
   --md-font-family: 'Roboto', sans-serif;

@@ -1,11 +1,11 @@
 /* Semantic Color Definitions */
 :root {
   /* Semantic Colors */
-  --color-primary:           var(--color-blue-500);
-  --color-secondary:         var(--color-gray-500);
-  --color-success:           var(--color-green-500);
-  --color-warning:           var(--color-yellow-500);
-  --color-danger:            var(--color-red-500);
+  --color-primary:              var(--color-blue-500);
+  --color-secondary:            var(--color-gray-500);
+  --color-success:              var(--color-green-500);
+  --color-warning:              var(--color-yellow-500);
+  --color-danger:               var(--color-red-500);
 
   /* Background Colors */
   --color-background-primary:   var(--color-primary);
@@ -19,13 +19,13 @@
   --color-background-elevated:  var(--color-white);
 
   /* Text Colors */
-  --color-text-primary:   var(--color-white);
-  --color-text-secondary: var(--color-white);
-  --color-text-success:   var(--color-white);
-  --color-text-warning:   var(--color-black);
-  --color-text-danger:    var(--color-white);
-  --color-text-white:     var(--color-white);
-  --color-text-black:     var(--color-black);
-  --color-text-base:      var(--color-gray-900);
-  --color-text-muted:     var(--color-gray-600);
+  --color-text-primary:         var(--color-white);
+  --color-text-secondary:       var(--color-white);
+  --color-text-success:         var(--color-white);
+  --color-text-warning:         var(--color-black);
+  --color-text-danger:          var(--color-white);
+  --color-text-white:           var(--color-white);
+  --color-text-black:           var(--color-black);
+  --color-text-base:            var(--color-gray-900);
+  --color-text-muted:           var(--color-gray-600);
 } 
