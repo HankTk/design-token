@@ -20,4 +20,42 @@
   --height-8: 8rem;   /* 128px */
   --height-9: 9rem;   /* 144px */
   --height-10: 10rem; /* 160px */
+
+  /* Material Design 3 Sizing Tokens */
+  /* Component Sizes */
+  --md-component-height-xs: 24px;
+  --md-component-height-sm: 32px;
+  --md-component-height-md: 40px;
+  --md-component-height-lg: 48px;
+  --md-component-height-xl: 56px;
+
+  /* Icon Sizes */
+  --md-icon-size-xs: 16px;
+  --md-icon-size-sm: 20px;
+  --md-icon-size-md: 24px;
+  --md-icon-size-lg: 32px;
+  --md-icon-size-xl: 40px;
+
+  /* Container Sizes */
+  --md-container-width-xs: 320px;
+  --md-container-width-sm: 480px;
+  --md-container-width-md: 640px;
+  --md-container-width-lg: 960px;
+  --md-container-width-xl: 1280px;
+
+  /* Border Widths */
+  --md-border-width-none: 0px;
+  --md-border-width-thin: 1px;
+  --md-border-width-medium: 2px;
+  --md-border-width-thick: 4px;
+
+  /* Material Design 3 Common Size Patterns */
+  --md-size-xs: var(--md-spacing-2);
+  --md-size-sm: var(--md-spacing-4);
+  --md-size-md: var(--md-spacing-6);
+  --md-size-lg: var(--md-spacing-8);
+  --md-size-xl: var(--md-spacing-10);
+  --md-size-2xl: var(--md-spacing-12);
+  --md-size-3xl: var(--md-spacing-16);
+  --md-size-4xl: var(--md-spacing-20);
 } 

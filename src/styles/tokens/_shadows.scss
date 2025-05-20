@@ -4,7 +4,35 @@
   Shadow Tokens
   ========================================================================== */
 :root {
+  /* Legacy Shadows */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  /* Material Design 3 Shadow Tokens */
+  /* Elevation Levels */
+  --md-elevation-1: 0 1px 2px 0px rgba(0, 0, 0, 0.3),
+                    0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --md-elevation-2: 0 1px 2px 0px rgba(0, 0, 0, 0.3),
+                    0 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --md-elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.15),
+                    0 1px 3px 0px rgba(0, 0, 0, 0.3);
+  --md-elevation-4: 0 6px 10px 4px rgba(0, 0, 0, 0.15),
+                    0 2px 3px 0px rgba(0, 0, 0, 0.3);
+  --md-elevation-5: 0 8px 12px 6px rgba(0, 0, 0, 0.15),
+                    0 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+  /* Material Design 3 Common Shadow Patterns */
+  --md-shadow-xs: var(--md-elevation-1);
+  --md-shadow-sm: var(--md-elevation-2);
+  --md-shadow-md: var(--md-elevation-3);
+  --md-shadow-lg: var(--md-elevation-4);
+  --md-shadow-xl: var(--md-elevation-5);
+
+  /* Material Design 3 Component-specific Shadows */
+  --md-shadow-button: var(--md-elevation-1);
+  --md-shadow-card: var(--md-elevation-2);
+  --md-shadow-dialog: var(--md-elevation-3);
+  --md-shadow-fab: var(--md-elevation-4);
+  --md-shadow-nav-drawer: var(--md-elevation-5);
 }
