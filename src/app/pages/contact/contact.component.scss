@@ -1,5 +1,5 @@
 h1 {
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--md-spacing-xl);
   font-size: var(--font-size-xl);
 }
 
@@ -9,19 +9,19 @@ h1 {
 }
 
 .form-group {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--md-spacing-lg);
 
   label {
     display: block;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--md-spacing-sm);
     color: var(--text-color);
   }
 
   input, textarea {
     width: 100%;
-    padding: var(--spacing-sm);
+    padding: var(--md-spacing-sm);
     border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--md-radius-sm);
     background-color: var(--background-color);
     color: var(--text-color);
     font-size: var(--font-size-md);
@@ -42,10 +42,10 @@ h1 {
 .error {
   color: var(--error-color);
   font-size: var(--font-size-sm);
-  margin-top: var(--spacing-xs);
+  margin-top: var(--md-spacing-xs);
 }
 
 button {
   width: 100%;
-  margin-top: var(--spacing-md);
+  margin-top: var(--md-spacing-md);
 } 

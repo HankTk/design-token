@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+  transition: opacity var(--md-transition-normal), visibility var(--md-transition-normal);
   z-index: 800;
 
   &--open {
@@ -21,11 +21,11 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: 300px;
+  width: 280px;
   background-color: var(--surface-color);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--md-shadow-md);
   transform: translateX(100%);
-  transition: transform var(--transition-normal);
+  transition: transform var(--md-transition-normal);
   z-index: 900;
 
   &--open {
@@ -33,38 +33,77 @@
   }
 }
 
-.settings__content {
-  padding: var(--spacing-lg);
-  margin-top: 64px; // Header height
+.settings__header {
+  padding: var(--md-spacing-md) var(--md-spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--surface-color);
+
+  h2 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-color);
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: var(--md-spacing-sm);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--md-transition-fast);
+
+    &:hover {
+      background-color: var(--border-color);
+    }
+
+    i {
+      font-size: var(--md-icon-size-md);
+    }
+  }
 }
 
-h2 {
-  margin-bottom: var(--spacing-lg);
-  font-size: var(--font-size-xl);
+.settings__content {
+  padding: var(--md-spacing-lg);
+  margin-top: var(--md-header-height);
 }
 
 .settings__section {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--md-spacing-lg);
 
   h3 {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--md-spacing-md);
     font-size: var(--font-size-lg);
   }
 }
 
 .theme-toggle {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: var(--md-spacing-sm);
 
   .btn {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-sm);
+    gap: var(--md-spacing-sm);
+    padding: var(--md-spacing-md);
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     color: var(--text-color);
+    border-radius: var(--md-radius-sm);
+    transition: background-color var(--md-transition-fast);
+
+    i {
+      font-size: 24px;
+    }
 
     &.active {
       background-color: var(--primary-color);

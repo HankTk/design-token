@@ -1,12 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StylesService } from '../../services/styles.service';
-import { Width, Height, WIDTH_TOKENS, HEIGHT_TOKENS } from '../../common/tokens/dimensions';
+import { Width, Height, WIDTH, HEIGHT } from '../../common/tokens/dimensions';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'information';
 
-type WidthTokenKey = keyof typeof WIDTH_TOKENS;
-type HeightTokenKey = keyof typeof HEIGHT_TOKENS;
+type WidthTokenKey = keyof typeof WIDTH;
+type HeightTokenKey = keyof typeof HEIGHT;
 
 @Component({
   selector: 'ax-button',
@@ -53,8 +53,8 @@ export class AxButtonComponent
       // Add any additional dynamic styles here
       opacity: this.disabled ? '0.6' : '1',
       cursor: this.disabled ? 'not-allowed' : 'pointer',
-      width: this.fullWidth ? WIDTH_TOKENS.FULL : (this.width ? WIDTH_TOKENS[this.width.toUpperCase() as WidthTokenKey] : 'auto'),
-      height: this.height ? HEIGHT_TOKENS[this.height.toUpperCase() as HeightTokenKey] : 'auto'
+      width: this.fullWidth ? WIDTH.FULL : (this.width ? WIDTH[this.width.toUpperCase() as WidthTokenKey] : 'auto'),
+      height: this.height ? HEIGHT[this.height.toUpperCase() as HeightTokenKey] : 'auto'
     };
   }
 

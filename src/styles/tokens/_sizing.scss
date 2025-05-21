@@ -1,25 +1,13 @@
 /* Sizing Tokens */
 :root {
-  /* Width Tokens */
-  --width-1:                2rem;    /* 32px */
-  --width-2:                4rem;    /* 64px */
-  --width-3:                6rem;    /* 96px */
-  --width-4:                10rem;   /* 160px */
-  --width-5:                16rem;   /* 256px */
-  --width-6:                26rem;   /* 416px */
-  --width-7:                42rem;   /* 672px */
-
-  /* Height Tokens */
-  --height-1:               1rem;   /* 16px */
-  --height-2:               2rem;   /* 32px */
-  --height-3:               3rem;   /* 48px */
-  --height-4:               4rem;   /* 64px */
-  --height-5:               5rem;   /* 80px */
-  --height-6:               6rem;   /* 96px */
-  --height-7:               7rem;   /* 112px */
-  --height-8:               8rem;   /* 128px */
-  --height-9:               9rem;   /* 144px */
-  --height-10:              10rem; /* 160px */
+  /* Material Design Size Tokens */
+  --md-size-xs:   2rem;    /* 32px */
+  --md-size-sm:   4rem;    /* 64px */
+  --md-size-md:   6rem;    /* 96px */
+  --md-size-lg:   10rem;   /* 160px */
+  --md-size-xl:   16rem;   /* 256px */
+  --md-size-2xl:  26rem;   /* 416px */
+  --md-size-3xl:  42rem;   /* 672px */
 
   /* Material Design 3 Sizing Tokens */
   /* Component Sizes */
@@ -28,6 +16,9 @@
   --md-component-height-md: 40px;
   --md-component-height-lg: 48px;
   --md-component-height-xl: 56px;
+
+  /* Header Height */
+  --md-header-height: 64px;
 
   /* Icon Sizes */
   --md-icon-size-xs:        16px;
@@ -49,13 +40,6 @@
   --md-border-width-medium: 2px;
   --md-border-width-thick:  4px;
 
-  /* Material Design 3 Common Size Patterns */
-  --md-size-xs:             var(--md-spacing-2);
-  --md-size-sm:             var(--md-spacing-4);
-  --md-size-md:             var(--md-spacing-6);
-  --md-size-lg:             var(--md-spacing-8);
-  --md-size-xl:             var(--md-spacing-10);
-  --md-size-2xl:            var(--md-spacing-12);
-  --md-size-3xl:            var(--md-spacing-16);
-  --md-size-4xl:            var(--md-spacing-20);
+  /* Material Design 3 Size Tokens */
+  --md-size-4xl:            var(--md-spacing-20); /* 80px */
 } 

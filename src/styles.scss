@@ -8,38 +8,38 @@
 
 /* Set default font family for the entire application */
 body {
-  font-family:                   var(--font-family-base), sans-serif;
-  background-color:              var(--color-background-base);
-  color:                         var(--color-text-base);
-  transition:                    background-color var(--theme-transition-duration), color var(--theme-transition-duration);
+  font-family: var(--font-family-base), sans-serif;
+  background-color: var(--color-background-base);
+  color: var(--color-text-base);
+  transition: background-color var(--md-transition-theme), color var(--md-transition-theme);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing-md);
+  padding: var(--md-spacing-md);
 }
 
 // Common styles
 .card {
   background-color: var(--surface-color);
-  border-radius: var(--border-radius-md);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--transition-normal);
+  border-radius: var(--md-radius-card);
+  padding: var(--md-spacing-md);
+  box-shadow: var(--md-shadow-sm);
+  transition: box-shadow var(--md-transition-normal);
 
   &:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--md-shadow-md);
   }
 }
 
 .btn {
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--border-radius-sm);
+  padding: var(--md-spacing-sm) var(--md-spacing-md);
+  border-radius: var(--md-radius-button);
   border: none;
   cursor: pointer;
   font-size: var(--font-size-md);
-  transition: background-color var(--transition-fast);
+  transition: background-color var(--md-transition-fast);
 
   &-primary {
     background-color: var(--primary-color);

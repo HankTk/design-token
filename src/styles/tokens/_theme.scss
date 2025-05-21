@@ -41,3 +41,11 @@
   --color-text-base:             var(--color-gray-100);
   --color-text-muted:            var(--color-gray-400);
 }
+
+/* Legacy Support */
+:root {
+  --color-background-base:       var(--background-color);
+  --color-background-elevated:   var(--surface-color);
+  --color-text-base:             var(--text-color);
+  --color-text-muted:            var(--text-secondary-color);
+}

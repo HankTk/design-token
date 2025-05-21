@@ -1,8 +1,9 @@
 export const RADIUS_TOKENS = {
-  SM:    'var(--radius-sm)',    // 2px
-  MD:    'var(--radius-md)',    // 6px
-  LG:    'var(--radius-lg)',    // 8px
-  XL:    'var(--radius-xl)',    // 12px
-  XXL:   'var(--radius-2xl)',   // 16px
-  FULL:  'var(--radius-full)',
+  NONE:  'var(--md-radius-none)',         // 0px
+  XS:    'var(--md-radius-extra-small)',  // 4px
+  SM:    'var(--md-radius-small)',        // 8px
+  MD:    'var(--md-radius-medium)',       // 12px
+  LG:    'var(--md-radius-large)',        // 16px
+  XL:    'var(--md-radius-extra-large)',  // 28px
+  FULL:  'var(--md-radius-full)',         // 9999px
 } as const; 

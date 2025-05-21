@@ -1,5 +1,5 @@
 <div class="drawer-backdrop" [class.drawer-backdrop--open]="isOpen$ | async" (click)="close()"></div>
-<div class="drawer" [class.drawer--open]="isOpen$ | async">
+<div class="sidenav" [class.sidenav--open]="isOpen$ | async">
   <div class="drawer__content">
     <nav class="drawer__nav">
       <a routerLink="/" class="drawer__link" (click)="close()">

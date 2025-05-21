@@ -1,62 +1,81 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing-lg);
+  padding: var(--md-spacing-lg);
 }
 
 h1 {
   font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--md-spacing-xl);
 }
 
 .tokens-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-xl);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--md-spacing-xl);
 }
 
 .token-section {
   h2 {
     font-size: var(--font-size-xl);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--md-spacing-lg);
+    color: var(--text-color);
+    font-weight: var(--font-weight-medium);
   }
 }
 
 .token-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--md-spacing-md);
+  background-color: var(--surface-color);
+  border-radius: var(--md-radius-card);
+  padding: var(--md-spacing-md);
+  box-shadow: var(--md-shadow-md);
 }
 
 .token-item {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-md);
+  gap: var(--md-spacing-md);
+  padding: var(--md-spacing-md);
   background-color: var(--surface-color);
-  border-radius: var(--border-radius-md);
-  box-shadow: var(--shadow-sm);
+  border-radius: var(--md-radius-sm);
+  border: 2px solid var(--border-color);
+  transition: all var(--transition-fast);
+  box-shadow: var(--md-shadow-sm);
+
+  &:hover {
+    background-color: var(--border-color);
+    border-color: var(--text-color-secondary);
+  }
 }
 
 .token-preview {
   width: 48px;
   height: 48px;
-  border-radius: var(--border-radius-sm);
-  border: 1px solid var(--border-color);
+  border-radius: var(--md-radius-sm);
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .token-info {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--md-spacing-xs);
+  flex: 1;
 }
 
 .token-name {
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color);
 }
 
 .token-value {
   font-family: monospace;
   color: var(--text-color-secondary);
   font-size: var(--font-size-sm);
+  word-break: break-all;
 } 

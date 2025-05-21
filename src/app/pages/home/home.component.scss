@@ -1,23 +1,24 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--spacing-lg);
+  padding: var(--md-spacing-lg);
+  margin-top: var(--md-spacing-xl);
 }
 
 h1 {
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--md-spacing-xl);
   font-size: var(--font-size-xl);
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-lg);
+  gap: var(--md-spacing-lg);
 }
 
 .card {
   h2 {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--md-spacing-md);
     font-size: var(--font-size-lg);
   }
 

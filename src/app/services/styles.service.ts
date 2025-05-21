@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { COLOR_TOKENS, SPACING_TOKENS, TYPOGRAPHY_TOKENS, RADIUS_TOKENS } from '../common/tokens';
-import { WIDTH_TOKENS, HEIGHT_TOKENS } from '../common/tokens/dimensions';
+import { WIDTH, HEIGHT } from '../common/tokens/dimensions';
 
 export type VariantType = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'information';
 export type SizeType = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | 'full';
@@ -114,8 +114,8 @@ export class StylesService
     const sizeKey = this.getLargerSize(width, height);
     const { fontSize, padding } = this.sizeMap[sizeKey];
     return {
-      width: WIDTH_TOKENS[width.toUpperCase() as keyof typeof WIDTH_TOKENS],
-      height: HEIGHT_TOKENS[height.toUpperCase() as keyof typeof HEIGHT_TOKENS],
+      width: WIDTH[width.toUpperCase() as keyof typeof WIDTH],
+      height: HEIGHT[height.toUpperCase() as keyof typeof HEIGHT],
       'font-size': fontSize,
       'padding': padding
     };
