@@ -1,13 +1,10 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ElementRef, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StylesService } from '../../services/styles.service';
-import { Width, Height, WIDTH, HEIGHT } from '../../common/tokens/dimensions';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'information';
-
-type WidthTokenKey = keyof typeof WIDTH;
-type HeightTokenKey = keyof typeof HEIGHT;
-
+/**
+ * A reusable button component that supports various styles and states
+ */
 @Component({
   selector: 'ax-button',
   standalone: true,
@@ -16,50 +13,63 @@ type HeightTokenKey = keyof typeof HEIGHT;
   templateUrl: './ax-button.component.html',
   styleUrls: ['./ax-button.component.scss']
 })
-export class AxButtonComponent
-{
-  @Input() variant: ButtonVariant = 'primary';
-  @Input() width?: Width;
-  @Input() height?: Height;
+export class AxButtonComponent {
+  protected readonly stylesService = inject(StylesService);
+  protected readonly elementRef = inject(ElementRef);
+
+  /** Base class name for the button */
+  private readonly BASE_CLASS = 'ax-button';
+
+  /** Whether the button is disabled */
   @Input() disabled = false;
+
+  /** Whether the button is in loading state */
   @Input() loading = false;
+
+  /** Whether the button should take full width */
   @Input() fullWidth = false;
+
+  /** Event emitted when the button is clicked */
   @Output() clicked = new EventEmitter<void>();
 
-  constructor(private stylesService: StylesService) {}
+  /**
+   * Gets the CSS classes for the button based on its current state and attributes
+   * @returns Space-separated string of CSS classes
+   */
+  getClass(): string {
+    const classes = [this.BASE_CLASS, 'comp'];
+    const classList = Array.from(this.elementRef.nativeElement.classList) as string[];
 
-  getClass(): string
-  {
-    const classes = ['ax-button'];
+    // Add variant class
+    const variantClass = classList.find(cls => cls.startsWith('v-'));
+    if (variantClass) {
+      classes.push(`comp-${variantClass.slice(2)}`);
+    }
 
-    // Class-based approach for variant
-    classes.push(`ax-button-${this.variant}`);
+    // Add size classes
+    const widthClass = classList.find(cls => cls.startsWith('w-'));
+    if (widthClass) {
+      classes.push(`comp-${widthClass.slice(2)}`);
+    }
 
-    // Class-based approach for modifiers
-    if (this.disabled) classes.push('ax-button-disabled');
-    if (this.loading) classes.push('ax-button-loading');
-    if (this.fullWidth) classes.push('ax-button-full');
+    const heightClass = classList.find(cls => cls.startsWith('h-'));
+    if (heightClass) {
+      classes.push(`comp-${heightClass.slice(2)}`);
+    }
+
+    // Add modifier classes
+    if (this.disabled) classes.push('comp-disabled');
+    if (this.loading) classes.push('comp-loading');
+    if (this.fullWidth) classes.push('comp-full-width');
 
     return classes.join(' ');
   }
 
-  // Style-based approach for dynamic styles
-  getDynamicStyles()
-  {
-    const baseStyles = this.stylesService.getVariantStyles(this.variant);
-
-    return {
-      ...baseStyles,
-      // Add any additional dynamic styles here
-      opacity: this.disabled ? '0.6' : '1',
-      cursor: this.disabled ? 'not-allowed' : 'pointer',
-      width: this.fullWidth ? WIDTH.FULL : (this.width ? WIDTH[this.width.toUpperCase() as WidthTokenKey] : 'auto'),
-      height: this.height ? HEIGHT[this.height.toUpperCase() as HeightTokenKey] : 'auto'
-    };
-  }
-
-  onClick(event: Event)
-  {
+  /**
+   * Handles the button click event
+   * @param event The click event
+   */
+  onClick(event: Event): void {
     if (this.disabled || this.loading) {
       event.preventDefault();
       return;

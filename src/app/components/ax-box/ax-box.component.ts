@@ -1,59 +1,88 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NgStyle, CommonModule } from '@angular/common';
-import { VariantType } from '../../services/styles.service';
-import { Height, Width, WIDTH, HEIGHT } from '../../common/tokens/dimensions';
+import { Component, Input, Output, EventEmitter, ElementRef, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { 
+  StylesService, 
+  ComponentVariant, 
+  ComponentSize,
+  ComponentPadding,
+  ComponentMargin,
+  ComponentRadius,
+  ComponentShadow
+} from '../../services/styles.service';
 
-type WidthTokenKey = keyof typeof WIDTH;
-type HeightTokenKey = keyof typeof HEIGHT;
-
+/**
+ * A flexible container component that supports various styling options
+ */
 @Component({
   selector: 'ax-box',
-  templateUrl: './ax-box.component.html',
-  styleUrls: ['./ax-box.component.scss'],
+  standalone: true,
   imports: [CommonModule],
-  standalone: true
+  providers: [StylesService],
+  templateUrl: './ax-box.component.html',
+  styleUrls: ['./ax-box.component.scss']
 })
-export class AxBoxComponent
-{
-  @Input() variant: VariantType = 'primary';
-  @Input() width?: Width;
-  @Input() height?: Height;
-  @Input() disabled = false;
-  @Input() loading = false;
+export class AxBoxComponent {
+  protected readonly stylesService = inject(StylesService);
+  protected readonly elementRef = inject(ElementRef);
+
+  /** Base class name for the box */
+  private readonly BASE_CLASS = 'ax-box';
+
+  /** Whether the box should take full width */
   @Input() fullWidth = false;
+
+  /** Whether the box should take full height */
+  @Input() fullHeight = false;
+
+  /** Whether the box should be centered */
+  @Input() centered = false;
+
+  /** Whether the box should have a border */
+  @Input() bordered = false;
+
+  /** Whether the box should be clickable */
+  @Input() clickable = false;
+
+  /** Whether the box is disabled */
+  @Input() disabled = false;
+
+  /** Whether the box is in loading state */
+  @Input() loading = false;
+
+  /** Event emitted when the box is clicked */
   @Output() clicked = new EventEmitter<void>();
 
-  getClass(): string
-  {
-    const classes = ['ax-box'];
+  /**
+   * Gets the CSS classes for the box based on its current state and attributes
+   * @returns Space-separated string of CSS classes
+   */
+  getClass(): string {
+    const classes = [this.BASE_CLASS];
+    const classList = Array.from(this.elementRef.nativeElement.classList) as string[];
 
-    // Class-based approach for variant
-    classes.push(`ax-box-${this.variant}`);
-
-    // Class-based approach for modifiers
-    if (this.disabled) classes.push('ax-box-disabled');
-    if (this.loading) classes.push('ax-box-loading');
-    if (this.fullWidth) classes.push('ax-box-full');
+    this.stylesService.addVariantClass(classes, classList, this.BASE_CLASS);
+    this.stylesService.addSizeClasses(classes, classList, this.BASE_CLASS);
+    this.stylesService.addSpacingClasses(classes, classList, this.BASE_CLASS);
+    this.stylesService.addModifierClasses(classes, this.BASE_CLASS, {
+      'full-width': this.fullWidth,
+      'full-height': this.fullHeight,
+      'centered': this.centered,
+      'bordered': this.bordered,
+      'clickable': this.clickable,
+      'disabled': this.disabled,
+      'loading': this.loading
+    });
 
     return classes.join(' ');
   }
 
-  // Style-based approach for dynamic styles
-  getDynamicStyles() {
-    return {
-      opacity: this.disabled ? '0.6' : '1',
-      cursor: this.disabled ? 'not-allowed' : 'pointer',
-      width: this.fullWidth ? WIDTH.FULL : (this.width ? WIDTH[this.width.toUpperCase() as WidthTokenKey] : 'auto'),
-      height: this.height ? HEIGHT[this.height.toUpperCase() as HeightTokenKey] : 'auto'
-    };
-  }
-
-  onClick(event: MouseEvent): void
-  {
-    if (this.disabled || this.loading) {
-      event.preventDefault();
-      return;
+  /**
+   * Handles click events on the box
+   * @param event The click event
+   */
+  onClick(event: MouseEvent): void {
+    if (!this.disabled && !this.loading) {
+      this.clicked.emit();
     }
-    this.clicked.emit();
   }
 }

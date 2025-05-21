@@ -6,6 +6,7 @@
   --color-success:              var(--color-green-500);
   --color-warning:              var(--color-yellow-500);
   --color-danger:               var(--color-red-500);
+  --color-information:          var(--color-blue-400);
 
   /* Background Colors */
   --color-background-primary:   var(--color-primary);
@@ -13,6 +14,7 @@
   --color-background-success:   var(--color-success);
   --color-background-warning:   var(--color-warning);
   --color-background-danger:    var(--color-danger);
+  --color-background-information: var(--color-information);
   --color-background-white:     var(--color-white);
   --color-background-black:     var(--color-black);
   --color-background-base:      var(--color-gray-100);
@@ -24,6 +26,7 @@
   --color-text-success:         var(--color-white);
   --color-text-warning:         var(--color-black);
   --color-text-danger:          var(--color-white);
+  --color-text-information:     var(--color-white);
   --color-text-white:           var(--color-white);
   --color-text-black:           var(--color-black);
   --color-text-base:            var(--color-gray-900);
