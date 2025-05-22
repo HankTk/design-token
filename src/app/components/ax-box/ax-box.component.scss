@@ -1,4 +1,18 @@
 :host {
+  display: block;
+}
+
+:host > div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--md-spacing-3) var(--md-spacing-5);
+  border-radius: var(--md-radius-button);
+  font-family: var(--font-family-base);
+  transition: all var(--md-transition-theme);
+  min-width: 100px;
+  min-height: 40px;
+  margin: var(--md-spacing-2);
 }
 
 .ax-component {
