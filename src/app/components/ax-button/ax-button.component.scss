@@ -16,6 +16,10 @@
   transition: all var(--md-transition-theme);
   gap: var(--md-spacing-2);
 
+  &:hover {
+    opacity: 0.8;
+  }
+
   .ax-component-content {
     display: block;
   }

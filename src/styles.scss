@@ -1,61 +1,62 @@
 @use 'styles/tokens' as *;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:        0;
+  padding:       0;
+  box-sizing:    border-box;
 }
 
 /* Set default font family for the entire application */
 body {
-  font-family: var(--font-family-base), sans-serif;
+  font-family:      var(--font-family-base), sans-serif;
   background-color: var(--color-background-base);
-  color: var(--color-text-base);
-  transition: background-color var(--md-transition-theme), color var(--md-transition-theme);
+  color:            var(--color-text-base);
+  transition:       background-color var(--md-transition-theme),
+                    color var(--md-transition-theme);
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--md-spacing-md);
+  max-width:        1200px;
+  margin:           0 auto;
+  padding:          var(--md-spacing-md);
 }
 
 // Common styles
 .card {
   background-color: var(--surface-color);
-  border-radius: var(--md-radius-card);
-  padding: var(--md-spacing-md);
-  box-shadow: var(--md-shadow-sm);
-  transition: box-shadow var(--md-transition-normal);
+  border-radius:    var(--md-radius-card);
+  padding:          var(--md-spacing-md);
+  box-shadow:       var(--md-shadow-sm);
+  transition:       box-shadow var(--md-transition-normal);
 
   &:hover {
-    box-shadow: var(--md-shadow-md);
+    box-shadow:     var(--md-shadow-md);
   }
 }
 
 .btn {
-  padding: var(--md-spacing-sm) var(--md-spacing-md);
-  border-radius: var(--md-radius-button);
-  border: none;
-  cursor: pointer;
-  font-size: var(--font-size-md);
-  transition: background-color var(--md-transition-fast);
+  padding:          var(--md-spacing-sm) var(--md-spacing-md);
+  border-radius:    var(--md-radius-button);
+  border:           none;
+  cursor:           pointer;
+  font-size:        var(--font-size-md);
+  transition:       background-color var(--md-transition-fast);
 
   &-primary {
     background-color: var(--primary-color);
-    color: white;
+    color:           white;
 
     &:hover {
-      opacity: 0.9;
+      opacity:       0.9;
     }
   }
 
   &-secondary {
     background-color: var(--secondary-color);
-    color: white;
+    color:           white;
 
     &:hover {
-      opacity: 0.9;
+      opacity:       0.9;
     }
   }
 }
