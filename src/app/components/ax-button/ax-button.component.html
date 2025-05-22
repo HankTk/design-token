@@ -1,8 +1,9 @@
 <button
-  [class]="getClass()"
+  class="ax-component"
+  [ngClass]="axClass"
   (click)="onClick($event)"
   [disabled]="disabled || loading">
-  <span class="ax-button-content">
+  <span class="ax-component-content">
     <ng-content></ng-content>
   </span>
 </button> 

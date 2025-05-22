@@ -1,11 +1,23 @@
-.ax-box {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  transition: all var(--md-transition-theme);
-
-  .ax-box-content {
-    display: block;
-  }
+:host {
 }
 
+.ax-component {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  padding: var(--md-spacing-3) var(--md-spacing-5);
+  // border-radius: var(--md-radius-button);
+  font-family: var(--font-family-base);
+  transition: all var(--md-transition-theme);
+  gap: var(--md-spacing-2);
+
+  .ax-component-content {
+    display: block;
+  }
+
+}

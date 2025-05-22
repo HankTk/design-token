@@ -21,6 +21,9 @@ export class AxButtonComponent {
   private readonly BASE_CLASS = 'ax-button';
 
   /** Whether the button is disabled */
+  @Input() axClass = '';
+
+  /** Whether the button is disabled */
   @Input() disabled = false;
 
   /** Whether the button is in loading state */

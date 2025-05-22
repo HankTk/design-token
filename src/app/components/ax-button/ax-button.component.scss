@@ -1,4 +1,7 @@
-.ax-button {
+:host {
+}
+
+.ax-component {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -6,12 +9,14 @@
   border: none;
   outline: none;
   cursor: pointer;
+
+  padding: var(--md-spacing-3) var(--md-spacing-5);
+  border-radius: var(--md-radius-button);
   font-family: var(--font-family-base);
   transition: all var(--md-transition-theme);
-  border-radius: var(--md-radius-button);
   gap: var(--md-spacing-2);
 
-  .ax-button-content {
+  .ax-component-content {
     display: block;
   }
 }

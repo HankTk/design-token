@@ -1,8 +1,9 @@
 <div
-  [class]="getClass()"
+  class="ax-component"
+  [ngClass]="axClass"
   (click)="onClick($event)"
   [attr.aria-disabled]="disabled">
-  <span class="ax-box-content">
+  <span class="ax-component-content">
     <ng-content></ng-content>
   </span>
 </div>

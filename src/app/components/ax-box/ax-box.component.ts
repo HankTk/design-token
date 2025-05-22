@@ -22,11 +22,16 @@ import {
   styleUrls: ['./ax-box.component.scss']
 })
 export class AxBoxComponent {
+
   protected readonly stylesService = inject(StylesService);
   protected readonly elementRef = inject(ElementRef);
 
   /** Base class name for the box */
   private readonly BASE_CLASS = 'ax-box';
+
+  /** Whether the button is disabled */
+  @Input() axClass = '';
+
 
   /** Whether the box should take full width */
   @Input() fullWidth = false;
