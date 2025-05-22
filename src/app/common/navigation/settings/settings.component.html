@@ -4,13 +4,17 @@
     <div class="settings__section">
       <h3>Theme</h3>
       <div class="theme-toggle">
-        <button class="btn" [class.active]="(theme$ | async) === 'light'" (click)="setTheme('light')">
-          <i class="material-icons">light_mode</i>
-          Light
-        </button>
-        <button class="btn" [class.active]="(theme$ | async) === 'dark'" (click)="setTheme('dark')">
-          <i class="material-icons">dark_mode</i>
-          Dark
+        <button class="btn" *ngFor="let theme of themes" 
+                [class.active]="(theme$ | async) === theme" 
+                (click)="setTheme(theme)">
+          <i class="material-icons">
+            {{ theme === 'light' ? 'light_mode' : 
+               theme === 'dark' ? 'dark_mode' : 
+               theme === 'blue' ? 'water_drop' : 
+               theme === 'green' ? 'grass' : 
+               'palette' }}
+          </i>
+          {{theme}}
         </button>
       </div>
     </div>

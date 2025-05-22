@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ThemeService } from '../../../services/theme.service';
+import { ThemeService, Theme } from '../../../services/theme.service';
 import { SettingsService } from '../../../services/settings.service';
 
 @Component({
@@ -13,6 +13,7 @@ import { SettingsService } from '../../../services/settings.service';
 export class SettingsComponent {
   isOpen$;
   theme$;
+  themes: Theme[] = ['light', 'dark', 'blue', 'green', 'purple'];
 
   constructor(
     private themeService: ThemeService,
@@ -26,7 +27,7 @@ export class SettingsComponent {
     this.settingsService.close();
   }
 
-  setTheme(theme: 'light' | 'dark') {
+  setTheme(theme: Theme) {
     this.themeService.setTheme(theme);
   }
 }

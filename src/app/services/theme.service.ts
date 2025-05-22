@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-export type Theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark' | 'blue' | 'green' | 'purple';
 
 @Injectable({
   providedIn: 'root'
@@ -23,13 +23,15 @@ export class ThemeService {
    * Toggles between light and dark themes
    */
   toggleTheme(): void {
-    const newTheme = this.themeSubject.value === 'light' ? 'dark' : 'light';
-    this.setTheme(newTheme);
+    const themes: Theme[] = ['light', 'dark', 'blue', 'green', 'purple'];
+    const currentIndex = themes.indexOf(this.themeSubject.value);
+    const nextIndex = (currentIndex + 1) % themes.length;
+    this.setTheme(themes[nextIndex]);
   }
 
   /**
    * Sets a specific theme
-   * @param theme The theme to set ('light' or 'dark')
+   * @param theme The theme to set
    */
   setTheme(theme: Theme): void {
     this.themeSubject.next(theme);
@@ -62,11 +64,7 @@ export class ThemeService {
   }
 
   private applyTheme(theme: Theme): void {
-    if (theme === 'dark') {
-      document.documentElement.setAttribute(this.THEME_ATTRIBUTE, 'dark');
-    } else {
-      document.documentElement.removeAttribute(this.THEME_ATTRIBUTE);
-    }
+    document.documentElement.setAttribute(this.THEME_ATTRIBUTE, theme);
   }
 
 } 

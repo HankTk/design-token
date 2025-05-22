@@ -86,20 +86,21 @@
 
 .theme-toggle {
   display: flex;
+  flex-direction: column;
   gap: var(--md-spacing-sm);
 
   .btn {
-    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: var(--md-spacing-sm);
     padding: var(--md-spacing-md);
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     color: var(--text-color);
     border-radius: var(--md-radius-sm);
-    transition: background-color var(--md-transition-fast);
+    transition: all var(--md-transition-fast);
+    cursor: pointer;
+    width: 100%;
 
     i {
       font-size: 24px;
