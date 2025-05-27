@@ -6,8 +6,7 @@
         "medium": { "value": "#999999" },
         "dark": { "value": "#111111" }
       },
-      "red": { "value": "#FF0000" },
-      "green": { "value": "#00FF00" }
+      "red": { "value": "#FF0000" }
     },
     "background": {
       "primary": { "value": "{color.base.gray.light.value}" },
