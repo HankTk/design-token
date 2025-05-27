@@ -1,31 +1,46 @@
 <div class="drawer-backdrop" [class.drawer-backdrop--open]="isOpen$ | async" (click)="close()"></div>
 <div class="sidenav" [class.sidenav--open]="isOpen$ | async">
-  <div class="drawer__content">
-    <nav class="drawer__nav">
-      <a routerLink="/" class="drawer__link" (click)="close()">
-        <i class="material-icons">home</i>
-        Home
-      </a>
-      <a routerLink="/tokens" class="drawer__link" (click)="close()">
-        <i class="material-icons">palette</i>
-        Design Tokens
-      </a>
-      <a routerLink="/mapping" class="drawer__link" (click)="close()">
-        <i class="material-icons">compare_arrows</i>
-        Token Mapping
-      </a>
-      <a routerLink="/components" class="drawer__link" (click)="close()">
-        <i class="material-icons">widgets</i>
-        Components
-      </a>
-      <a routerLink="/contact" class="drawer__link" (click)="close()">
-        <i class="material-icons">mail</i>
-        Contact
-      </a>
-      <a routerLink="/about" class="drawer__link" (click)="close()">
-        <i class="material-icons">info</i>
-        About
-      </a>
+  <!--
+  <div class="sidenav-header">
+    <h2>Menu</h2>
+    <button (click)="close()">
+      <i class="material-icons">close</i>
+    </button>
+  </div>
+  -->
+  <div class="sidenav-content">
+    <nav class="sidenav-menu">
+      <div class="nav-links">
+        <a routerLink="/" (click)="close()">
+          <i class="material-icons">home</i>
+          Home
+        </a>
+        <a routerLink="/tokens" (click)="close()">
+          <i class="material-icons">palette</i>
+          Design Tokens
+        </a>
+        <a routerLink="/mapping" (click)="close()">
+          <i class="material-icons">compare_arrows</i>
+          Token Mapping
+        </a>
+        <a routerLink="/components" (click)="close()">
+          <i class="material-icons">widgets</i>
+          Components
+        </a>
+        <a routerLink="/contact" (click)="close()">
+          <i class="material-icons">mail</i>
+          Contact
+        </a>
+        <a routerLink="/about" (click)="close()">
+          <i class="material-icons">info</i>
+          About
+        </a>
+      </div>
     </nav>
+  </div>
+  <div class="sidenav-footer">
+    <div class="theme-switcher">
+      <!-- Theme switcher content -->
+    </div>
   </div>
 </div>

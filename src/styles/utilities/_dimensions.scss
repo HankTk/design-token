@@ -1,0 +1,26 @@
+/* ==========================================================================
+  Dimension Utilities
+  ========================================================================== */
+.u {
+  /* Width */
+  &-w {
+    &-full { width: 100%; }
+    &-half { width: 50%; }
+    &-quarter { width: 25%; }
+    &-auto { width: auto; }
+    &-fit { width: fit-content; }
+    &-min { width: min-content; }
+    &-max { width: max-content; }
+  }
+
+  /* Height */
+  &-h {
+    &-full { height: 100%; }
+    &-half { height: 50%; }
+    &-quarter { height: 25%; }
+    &-auto { height: auto; }
+    &-fit { height: fit-content; }
+    &-min { height: min-content; }
+    &-max { height: max-content; }
+  }
+} 

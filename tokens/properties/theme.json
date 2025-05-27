@@ -1,0 +1,91 @@
+{
+  "theme": {
+    "light": {
+      "color": {
+        "primary": { "value": "{color.base.blue.500.value}" },
+        "secondary": { "value": "{color.base.gray.500.value}" },
+        "background": { "value": "{color.base.gray.100.value}" },
+        "surface": { "value": "{color.base.gray.100.value}" },
+        "text": { "value": "{color.base.gray.900.value}" },
+        "text-secondary": { "value": "{color.base.gray.600.value}" },
+        "border": { "value": "{color.base.gray.200.value}" },
+        "error": { "value": "#f44336" },
+        "success": { "value": "#4caf50" },
+        "warning": { "value": "#ff9800" },
+        "info": { "value": "{color.base.blue.500.value}" }
+      }
+    },
+    "dark": {
+      "color": {
+        "primary": { "value": "{color.base.blue.300.value}" },
+        "secondary": { "value": "{color.base.gray.400.value}" },
+        "background": { "value": "{color.base.gray.900.value}" },
+        "surface": { "value": "{color.base.gray.700.value}" },
+        "text": { "value": "{color.base.white.value}" },
+        "text-secondary": { "value": "{color.base.gray.300.value}" },
+        "border": { "value": "{color.base.gray.600.value}" },
+        "error": { "value": "#ef5350" },
+        "success": { "value": "#66bb6a" },
+        "warning": { "value": "#ffa726" },
+        "info": { "value": "{color.base.blue.300.value}" },
+        "background-base": { "value": "{color.base.gray.900.value}" },
+        "background-elevated": { "value": "{color.base.gray.700.value}" },
+        "text-base": { "value": "{color.base.white.value}" },
+        "text-muted": { "value": "{color.base.gray.300.value}" }
+      }
+    },
+    "blue": {
+      "color": {
+        "primary": { "value": "{color.base.blue.500.value}" },
+        "secondary": { "value": "{color.base.blue.300.value}" },
+        "background": { "value": "{color.base.blue.100.value}" },
+        "surface": { "value": "{color.base.blue.100.value}" },
+        "text": { "value": "{color.base.blue.900.value}" },
+        "text-secondary": { "value": "{color.base.blue.600.value}" },
+        "border": { "value": "{color.base.blue.200.value}" },
+        "error": { "value": "#f44336" },
+        "success": { "value": "#4caf50" },
+        "warning": { "value": "#ff9800" },
+        "info": { "value": "{color.base.blue.500.value}" }
+      }
+    },
+    "green": {
+      "color": {
+        "primary": { "value": "{color.base.green.500.value}" },
+        "secondary": { "value": "{color.base.green.300.value}" },
+        "background": { "value": "{color.base.green.100.value}" },
+        "surface": { "value": "{color.base.green.100.value}" },
+        "text": { "value": "{color.base.green.900.value}" },
+        "text-secondary": { "value": "{color.base.green.600.value}" },
+        "border": { "value": "{color.base.green.200.value}" },
+        "error": { "value": "#f44336" },
+        "success": { "value": "#4caf50" },
+        "warning": { "value": "#ff9800" },
+        "info": { "value": "{color.base.green.500.value}" }
+      }
+    },
+    "purple": {
+      "color": {
+        "primary": { "value": "{color.base.purple.500.value}" },
+        "secondary": { "value": "{color.base.purple.300.value}" },
+        "background": { "value": "{color.base.purple.100.value}" },
+        "surface": { "value": "{color.base.purple.100.value}" },
+        "text": { "value": "{color.base.purple.900.value}" },
+        "text-secondary": { "value": "{color.base.purple.600.value}" },
+        "border": { "value": "{color.base.purple.200.value}" },
+        "error": { "value": "#f44336" },
+        "success": { "value": "#4caf50" },
+        "warning": { "value": "#ff9800" },
+        "info": { "value": "{color.base.purple.500.value}" }
+      }
+    },
+    "legacy": {
+      "color": {
+        "background-base": { "value": "{theme.light.color.background.value}" },
+        "background-elevated": { "value": "{theme.light.color.surface.value}" },
+        "text-base": { "value": "{theme.light.color.text.value}" },
+        "text-muted": { "value": "{theme.light.color.text-secondary.value}" }
+      }
+    }
+  }
+} 

@@ -1,0 +1,112 @@
+/* ==========================================================================
+  Component Utilities
+  ========================================================================== */
+.ax {
+  /* Component States */
+  &-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* Component Modifiers */
+  &-full-width { width: 100%; }
+  &-full-height { height: 100%; }
+  &-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-bordered {
+    border: 1px solid var(--color-semantic-border);
+  }
+  &-clickable {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  /* Component Sizes */
+  &-comp {
+    &-xs { height: var(--sizing-md-component-height-xs); }
+    &-sm { height: var(--sizing-md-component-height-sm); }
+    &-md { height: var(--sizing-md-component-height-md); }
+    &-lg { height: var(--sizing-md-component-height-lg); }
+    &-xl { height: var(--sizing-md-component-height-xl); }
+  }
+
+  /* Component Variants */
+  &-primary {
+    background-color: var(--color-semantic-background-primary);
+    color: var(--color-semantic-text-primary);
+  }
+  &-secondary {
+    background-color: var(--color-semantic-background-secondary);
+    color: var(--color-semantic-text-secondary);
+  }
+  &-success {
+    background-color: var(--color-semantic-background-success);
+    color: var(--color-semantic-text-success);
+  }
+  &-warning {
+    background-color: var(--color-semantic-background-warning);
+    color: var(--color-semantic-text-warning);
+  }
+  &-danger {
+    background-color: var(--color-semantic-background-danger);
+    color: var(--color-semantic-text-danger);
+  }
+  &-info {
+    background-color: var(--color-semantic-background-information);
+    color: var(--color-semantic-text-information);
+  }
+}
+
+.c {
+  /* Card */
+  &-card {
+    background-color: var(--color-semantic-background-elevated);
+    border: 1px solid var(--color-semantic-border);
+    border-radius: var(--radius-md-common-sm);
+    padding: var(--spacing-md-common-md);
+  }
+
+  /* Button */
+  &-btn {
+    border: 1px solid var(--color-semantic-border);
+    border-radius: var(--radius-md-common-sm);
+    padding: var(--spacing-md-common-sm) var(--spacing-md-common-md);
+    cursor: pointer;
+
+    &-primary {
+      background-color: var(--color-semantic-background-primary);
+      color: var(--color-semantic-text-primary);
+    }
+
+    &-secondary {
+      background-color: var(--color-semantic-background-secondary);
+      color: var(--color-semantic-text-secondary);
+    }
+
+    &-success {
+      background-color: var(--color-semantic-background-success);
+      color: var(--color-semantic-text-success);
+    }
+
+    &-warning {
+      background-color: var(--color-semantic-background-warning);
+      color: var(--color-semantic-text-warning);
+    }
+
+    &-danger {
+      background-color: var(--color-semantic-background-danger);
+      color: var(--color-semantic-text-danger);
+    }
+
+    &-info {
+      background-color: var(--color-semantic-background-information);
+      color: var(--color-semantic-text-information);
+    }
+  }
+} 

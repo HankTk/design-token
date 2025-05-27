@@ -8,7 +8,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--md-transition-normal), visibility var(--md-transition-normal);
+  transition: opacity var(--transition-md-common-normal), visibility var(--transition-md-common-normal);
   z-index: 800;
 
   &--open {
@@ -24,10 +24,10 @@
   left: 0;
   bottom: 0;
   width: 280px;
-  background-color: var(--surface-color);
-  box-shadow: var(--md-shadow-md);
+  background-color: var(--color-semantic-background-elevated);
+  box-shadow: var(--shadow-md-component-nav-drawer);
   transform: translateX(-100%);
-  transition: transform var(--md-transition-normal);
+  transition: transform var(--transition-md-component-nav-drawer);
   z-index: 900;
 
   &--open {
@@ -36,35 +36,35 @@
 }
 
 // Drawer header styles
-.drawer__header {
-  padding: var(--md-spacing-md) var(--md-spacing-lg);
-  border-bottom: 1px solid var(--border-color);
+.sidenav-header {
+  padding: var(--spacing-md-common-md) var(--spacing-md-common-lg);
+  border-bottom: 1px solid var(--color-semantic-border);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--surface-color);
+  background-color: var(--color-semantic-background-elevated);
 
   h2 {
     margin: 0;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-medium);
-    color: var(--text-color);
+    font-size: var(--typography-font-size-lg);
+    font-weight: var(--typography-font-weight-medium);
+    color: var(--color-semantic-text-base);
   }
 
   button {
     background: none;
     border: none;
-    color: var(--text-color);
+    color: var(--color-semantic-text-base);
     cursor: pointer;
-    padding: var(--md-spacing-sm);
+    padding: var(--spacing-md-common-sm);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color var(--md-transition-fast);
+    transition: background-color var(--transition-md-common-fast);
 
     &:hover {
-      background-color: var(--border-color);
+      background-color: var(--color-semantic-border);
     }
 
     i {
@@ -74,34 +74,50 @@
 }
 
 // Drawer content styles
-.drawer__content {
-  padding: var(--md-spacing-lg);
-  margin-top: var(--md-header-height);
+.sidenav-content {
+  padding: var(--spacing-md-common-lg);
+  margin-top: var(--sizing-md-header-height);
 }
 
 // Navigation styles
-.drawer__nav {
-  display: flex;
-  flex-direction: column;
-  gap: var(--md-spacing-sm);
+.sidenav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 // Link styles
-.drawer__link {
+.nav-links {
   display: flex;
-  align-items: center;
-  gap: var(--md-spacing-md);
-  padding: var(--md-spacing-md);
-  color: var(--text-color);
-  text-decoration: none;
-  border-radius: var(--md-radius-sm);
-  transition: background-color var(--md-transition-fast);
+  flex-direction: column;
+  gap: var(--spacing-md-common-md);
 
-  &:hover {
-    background-color: var(--border-color);
-  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md-common-md);
+    padding: var(--spacing-md-common-md);
+    color: var(--color-semantic-text-base);
+    text-decoration: none;
+    border-radius: var(--radius-md-common-sm);
+    transition: background-color var(--transition-md-common-fast);
 
-  i {
-    font-size: 24px;
+    &:hover {
+      background-color: var(--color-semantic-border);
+    }
+
+    i {
+      font-size: var(--md-icon-size-md);
+    }
   }
+}
+
+.sidenav-footer {
+  padding: var(--spacing-md-common-lg);
+  border-top: 1px solid var(--color-semantic-border);
+}
+
+.theme-switcher {
+  display: flex;
+  gap: var(--spacing-md-common-sm);
 } 

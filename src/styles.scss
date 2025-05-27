@@ -1,4 +1,4 @@
-@use 'styles/tokens' as *;
+@use './styles/tokens' as *;
 
 * {
   margin:        0;
@@ -8,42 +8,42 @@
 
 /* Set default font family for the entire application */
 body {
-  font-family:      var(--font-family-base), sans-serif;
-  background-color: var(--color-background-base);
-  color:            var(--color-text-base);
-  transition:       background-color var(--md-transition-theme),
-                    color var(--md-transition-theme);
+  font-family:      var(--font-family-base);
+  background-color: var(--color-semantic-background-base);
+  color:            var(--color-semantic-text-base);
+  transition:       background-color var(--transition-md-common-normal),
+                    color var(--transition-md-common-normal);
 }
 
 .container {
   max-width:        1200px;
   margin:           0 auto;
-  padding:          var(--md-spacing-md);
+  padding:          var(--spacing-md-common-md);
 }
 
 // Common styles
 .card {
-  background-color: var(--surface-color);
-  border-radius:    var(--md-radius-card);
-  padding:          var(--md-spacing-md);
-  box-shadow:       var(--md-shadow-sm);
-  transition:       box-shadow var(--md-transition-normal);
+  background-color: var(--color-semantic-background-elevated);
+  border-radius:    var(--radius-md-component-card);
+  padding:          var(--spacing-md-common-md);
+  box-shadow:       var(--shadow-md-common-sm);
+  transition:       box-shadow var(--transition-md-common-normal);
 
   &:hover {
-    box-shadow:     var(--md-shadow-md);
+    box-shadow:     var(--shadow-md-common-md);
   }
 }
 
 .btn {
-  padding:          var(--md-spacing-sm) var(--md-spacing-md);
-  border-radius:    var(--md-radius-button);
+  padding:          var(--spacing-md-common-sm) var(--spacing-md-common-md);
+  border-radius:    var(--radius-md-common-button);
   border:           none;
   cursor:           pointer;
-  font-size:        var(--font-size-md);
-  transition:       background-color var(--md-transition-fast);
+  font-size:        var(--typography-font-size-md);
+  transition:       background-color var(--transition-md-common-fast);
 
   &-primary {
-    background-color: var(--primary-color);
+    background-color: var(--color-semantic-primary);
     color:           white;
 
     &:hover {
@@ -52,7 +52,7 @@ body {
   }
 
   &-secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--color-semantic-secondary);
     color:           white;
 
     &:hover {

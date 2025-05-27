@@ -10,11 +10,11 @@
   outline: none;
   cursor: pointer;
 
-  padding: var(--md-spacing-3) var(--md-spacing-5);
-  border-radius: var(--md-radius-button);
-  font-family: var(--font-family-base);
-  transition: all var(--md-transition-theme);
-  gap: var(--md-spacing-2);
+  padding: var(--spacing-md-common-sm) var(--spacing-md-common-md);
+  border-radius: var(--radius-md-component-button);
+  font-family: var(--typography-font-family-base);
+  transition: all var(--transition-md-component-button);
+  gap: var(--spacing-md-common-sm);
 
   &:hover {
     opacity: 0.8;

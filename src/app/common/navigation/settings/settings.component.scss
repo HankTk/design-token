@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--md-transition-normal), visibility var(--md-transition-normal);
+  transition: opacity var(--transition-md-common-normal), visibility var(--transition-md-common-normal);
   z-index: 800;
 
   &--open {
@@ -22,10 +22,10 @@
   right: 0;
   bottom: 0;
   width: 280px;
-  background-color: var(--surface-color);
-  box-shadow: var(--md-shadow-md);
+  background-color: var(--color-semantic-background-elevated);
+  box-shadow: var(--shadow-md-common-md);
   transform: translateX(100%);
-  transition: transform var(--md-transition-normal);
+  transition: transform var(--transition-md-component-dialog);
   z-index: 900;
 
   &--open {
@@ -33,35 +33,35 @@
   }
 }
 
-.settings__header {
-  padding: var(--md-spacing-md) var(--md-spacing-lg);
-  border-bottom: 1px solid var(--border-color);
+.settings-header {
+  padding: var(--spacing-md-common-md) var(--spacing-md-common-lg);
+  border-bottom: 1px solid var(--color-semantic-border);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--surface-color);
+  background-color: var(--color-semantic-background-elevated);
 
   h2 {
     margin: 0;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-medium);
-    color: var(--text-color);
+    font-size: var(--typography-font-size-lg);
+    font-weight: var(--typography-font-weight-medium);
+    color: var(--color-semantic-text-base);
   }
 
   button {
     background: none;
     border: none;
-    color: var(--text-color);
+    color: var(--color-semantic-text-base);
     cursor: pointer;
-    padding: var(--md-spacing-sm);
+    padding: var(--spacing-md-common-sm);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color var(--md-transition-fast);
+    transition: background-color var(--transition-md-common-fast);
 
     &:hover {
-      background-color: var(--border-color);
+      background-color: var(--color-semantic-border);
     }
 
     i {
@@ -70,50 +70,53 @@
   }
 }
 
-.settings__content {
-  padding: var(--md-spacing-lg);
-  margin-top: var(--md-header-height);
+.settings-content {
+  padding: var(--spacing-md-common-lg);
+  margin-top: var(--sizing-md-header-height);
 }
 
-.settings__section {
-  margin-bottom: var(--md-spacing-lg);
+.settings-section {
+  margin-bottom: var(--spacing-md-common-lg);
 
   h3 {
-    margin-bottom: var(--md-spacing-md);
-    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md-common-md);
+    font-size: var(--typography-font-size-md);
+    font-weight: var(--typography-font-weight-medium);
+    color: var(--color-semantic-text-base);
   }
 }
 
 .theme-toggle {
   display: flex;
   flex-direction: column;
-  gap: var(--md-spacing-sm);
+  gap: var(--spacing-md-common-sm);
 
-  .btn {
+  .btn-icon {
     display: flex;
     align-items: center;
-    gap: var(--md-spacing-sm);
-    padding: var(--md-spacing-md);
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    border-radius: var(--md-radius-sm);
-    transition: all var(--md-transition-fast);
+    gap: var(--spacing-md-common-md);
+    padding: var(--spacing-md-common-md);
+    background-color: var(--color-semantic-background-elevated);
+    border: 1px solid var(--color-semantic-border);
+    color: var(--color-semantic-text-base);
+    border-radius: var(--radius-md-common-sm);
+    transition: all var(--transition-md-common-fast);
     cursor: pointer;
     width: 100%;
+    text-align: left;
 
     i {
-      font-size: 24px;
+      font-size: var(--md-icon-size-md);
     }
 
     &.active {
-      background-color: var(--primary-color);
-      border-color: var(--primary-color);
-      color: white;
+      background-color: var(--color-semantic-background-primary);
+      border-color: var(--color-semantic-background-primary);
+      color: var(--color-semantic-text-primary);
     }
 
     &:hover:not(.active) {
-      background-color: var(--border-color);
+      background-color: var(--color-semantic-border);
     }
   }
 } 

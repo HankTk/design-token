@@ -1,0 +1,33 @@
+/* ==========================================================================
+  Spacing Utilities
+  ========================================================================== */
+.u {
+  /* Gap */
+  &-gap {
+    &-xs { gap: var(--spacing-md-common-xs); }
+    &-sm { gap: var(--spacing-md-common-sm); }
+    &-md { gap: var(--spacing-md-common-md); }
+    &-lg { gap: var(--spacing-md-common-lg); }
+    &-xl { gap: var(--spacing-md-common-xl); }
+  }
+
+  /* Margin */
+  &-m {
+    &-0 { margin: 0; }
+    &-xs { margin: var(--spacing-md-common-xs); }
+    &-sm { margin: var(--spacing-md-common-sm); }
+    &-md { margin: var(--spacing-md-common-md); }
+    &-lg { margin: var(--spacing-md-common-lg); }
+    &-xl { margin: var(--spacing-md-common-xl); }
+  }
+
+  /* Padding */
+  &-p {
+    &-0 { padding: 0; }
+    &-xs { padding: var(--spacing-md-common-xs); }
+    &-sm { padding: var(--spacing-md-common-sm); }
+    &-md { padding: var(--spacing-md-common-md); }
+    &-lg { padding: var(--spacing-md-common-lg); }
+    &-xl { padding: var(--spacing-md-common-xl); }
+  }
+} 

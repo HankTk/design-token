@@ -1,0 +1,36 @@
+{
+  "color": {
+    "md": {
+      "surface": {
+        "0": { "value": "#000000", "attributes": { "category": "color", "type": "md-surface" } },
+        "10": { "value": "#1C1B1F", "attributes": { "category": "color", "type": "md-surface" } },
+        "20": { "value": "#313033", "attributes": { "category": "color", "type": "md-surface" } },
+        "30": { "value": "#484649", "attributes": { "category": "color", "type": "md-surface" } },
+        "40": { "value": "#605D62", "attributes": { "category": "color", "type": "md-surface" } },
+        "50": { "value": "#787579", "attributes": { "category": "color", "type": "md-surface" } },
+        "60": { "value": "#939094", "attributes": { "category": "color", "type": "md-surface" } },
+        "70": { "value": "#AEAAAE", "attributes": { "category": "color", "type": "md-surface" } },
+        "80": { "value": "#C9C5CA", "attributes": { "category": "color", "type": "md-surface" } },
+        "90": { "value": "#E6E1E5", "attributes": { "category": "color", "type": "md-surface" } },
+        "95": { "value": "#F4EFF4", "attributes": { "category": "color", "type": "md-surface" } },
+        "99": { "value": "#FFFBFE", "attributes": { "category": "color", "type": "md-surface" } },
+        "100": { "value": "#FFFFFF", "attributes": { "category": "color", "type": "md-surface" } }
+      },
+      "surface-variant": {
+        "0": { "value": "#000000", "attributes": { "category": "color", "type": "md-surface" } },
+        "10": { "value": "#1C1B1F", "attributes": { "category": "color", "type": "md-surface" } },
+        "20": { "value": "#313033", "attributes": { "category": "color", "type": "md-surface" } },
+        "30": { "value": "#484649", "attributes": { "category": "color", "type": "md-surface" } },
+        "40": { "value": "#605D62", "attributes": { "category": "color", "type": "md-surface" } },
+        "50": { "value": "#787579", "attributes": { "category": "color", "type": "md-surface" } },
+        "60": { "value": "#939094", "attributes": { "category": "color", "type": "md-surface" } },
+        "70": { "value": "#AEAAAE", "attributes": { "category": "color", "type": "md-surface" } },
+        "80": { "value": "#C9C5CA", "attributes": { "category": "color", "type": "md-surface" } },
+        "90": { "value": "#E6E1E5", "attributes": { "category": "color", "type": "md-surface" } },
+        "95": { "value": "#F4EFF4", "attributes": { "category": "color", "type": "md-surface" } },
+        "99": { "value": "#FFFBFE", "attributes": { "category": "color", "type": "md-surface" } },
+        "100": { "value": "#FFFFFF", "attributes": { "category": "color", "type": "md-surface" } }
+      }
+    }
+  }
+} 

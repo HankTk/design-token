@@ -1,45 +1,66 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--md-spacing-lg);
+  padding: var(--spacing-md-common-lg);
 }
 
 h1 {
-  font-size: var(--font-size-2xl);
-  margin-bottom: var(--md-spacing-xl);
+  font-size: var(--typography-font-size-2xl);
+  margin-bottom: var(--spacing-md-common-xl);
+  color: var(--color-semantic-text-base);
+}
+
+.components-page {
+  padding: var(--spacing-md-common-lg);
+}
+
+.page-title {
+  font-size: var(--typography-font-size-2xl);
+  margin-bottom: var(--spacing-md-common-xl);
 }
 
 .components-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: var(--md-spacing-xl);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md-common-xl);
 }
 
 .component-section {
-  h2 {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--md-spacing-lg);
-  }
+  display: grid;
+  gap: var(--spacing-md-common-md);
+  padding: var(--spacing-md-common-lg);
+  border: 1px solid var(--color-semantic-border);
+  border-radius: var(--radius-md-common-sm);
+  background-color: var(--color-semantic-background-elevated);
+  box-shadow: var(--shadow-md-common-sm);
+}
+
+.section-title {
+  font-size: var(--typography-font-size-lg);
+  margin-bottom: var(--spacing-md-common-md);
+  color: var(--color-semantic-text-base);
 }
 
 .component-demo {
   display: flex;
   flex-direction: column;
-  gap: var(--md-spacing-md);
-  padding: var(--md-spacing-lg);
-  background-color: var(--surface-color);
-  border-radius: var(--md-radius-card);
-  box-shadow: var(--md-shadow-sm);
+  gap: var(--spacing-md-common-md);
+  padding: var(--spacing-md-common-lg);
+  background-color: var(--color-semantic-background-elevated);
+  border-radius: var(--radius-md-common-card);
+  box-shadow: var(--shadow-md-common-sm);
+  border: 1px solid var(--color-semantic-border);
 }
 
 .card {
   h3 {
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--md-spacing-md);
+    font-size: var(--typography-font-size-lg);
+    margin-bottom: var(--spacing-md-common-md);
+    color: var(--color-semantic-text-base);
   }
 
   p {
-    color: var(--text-color-secondary);
+    color: var(--color-semantic-text-muted);
     line-height: 1.5;
   }
 } 

@@ -1,0 +1,35 @@
+{
+  "transition": {
+    "md": {
+      "duration": {
+        "shortest": { "value": "150ms" },
+        "shorter": { "value": "200ms" },
+        "short": { "value": "250ms" },
+        "standard": { "value": "300ms" },
+        "complex": { "value": "375ms" },
+        "entering": { "value": "225ms" },
+        "exiting": { "value": "195ms" }
+      },
+      "easing": {
+        "linear": { "value": "cubic-bezier(0, 0, 1, 1)" },
+        "standard": { "value": "cubic-bezier(0.2, 0, 0, 1)" },
+        "emphasized": { "value": "cubic-bezier(0.2, 0, 0, 1)" },
+        "emphasized-decelerate": { "value": "cubic-bezier(0.05, 0.7, 0.1, 1)" },
+        "emphasized-accelerate": { "value": "cubic-bezier(0.3, 0, 0.8, 0.15)" }
+      },
+      "common": {
+        "fast": { "value": "{transition.md.duration.shorter.value} {transition.md.easing.standard.value}" },
+        "normal": { "value": "{transition.md.duration.standard.value} {transition.md.easing.standard.value}" },
+        "complex": { "value": "{transition.md.duration.complex.value} {transition.md.easing.standard.value}" },
+        "theme": { "value": "{transition.md.duration.standard.value} {transition.md.easing.standard.value}" }
+      },
+      "component": {
+        "button": { "value": "{transition.md.common.normal.value}" },
+        "card": { "value": "{transition.md.common.normal.value}" },
+        "dialog": { "value": "{transition.md.common.normal.value}" },
+        "fab": { "value": "{transition.md.common.normal.value}" },
+        "nav-drawer": { "value": "{transition.md.common.normal.value}" }
+      }
+    }
+  }
+} 

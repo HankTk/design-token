@@ -1,34 +1,28 @@
-/* Semantic Color Definitions */
 :root {
-  /* Semantic Colors */
-  --color-primary:              var(--color-blue-500);
-  --color-secondary:            var(--color-gray-500);
-  --color-success:              var(--color-green-500);
-  --color-warning:              var(--color-yellow-500);
-  --color-danger:               var(--color-red-500);
-  --color-information:          var(--color-blue-400);
-
-  /* Background Colors */
-  --color-background-primary:   var(--color-primary);
-  --color-background-secondary: var(--color-secondary);
-  --color-background-success:   var(--color-success);
-  --color-background-warning:   var(--color-warning);
-  --color-background-danger:    var(--color-danger);
-  --color-background-information: var(--color-information);
-  --color-background-white:     var(--color-white);
-  --color-background-black:     var(--color-black);
-  --color-background-base:      var(--color-gray-100);
-  --color-background-elevated:  var(--color-white);
-
-  /* Text Colors */
-  --color-text-primary:         var(--color-white);
-  --color-text-secondary:       var(--color-white);
-  --color-text-success:         var(--color-white);
-  --color-text-warning:         var(--color-black);
-  --color-text-danger:          var(--color-white);
-  --color-text-information:     var(--color-white);
-  --color-text-white:           var(--color-white);
-  --color-text-black:           var(--color-black);
-  --color-text-base:            var(--color-gray-900);
-  --color-text-muted:           var(--color-gray-600);
-} 
+  --color-semantic-primary: #3b82f6;
+  --color-semantic-secondary: #6b7280;
+  --color-semantic-success: #22c55e;
+  --color-semantic-warning: #eab308;
+  --color-semantic-danger: #ef4444;
+  --color-semantic-information: #60a5fa;
+  --color-semantic-background-primary: #3b82f6;
+  --color-semantic-background-secondary: #6b7280;
+  --color-semantic-background-success: #22c55e;
+  --color-semantic-background-warning: #eab308;
+  --color-semantic-background-danger: #ef4444;
+  --color-semantic-background-information: #60a5fa;
+  --color-semantic-background-white: #ffffff;
+  --color-semantic-background-black: #000000;
+  --color-semantic-background-base: #f3f4f6;
+  --color-semantic-background-elevated: #ffffff;
+  --color-semantic-text-primary: #ffffff;
+  --color-semantic-text-secondary: #ffffff;
+  --color-semantic-text-success: #ffffff;
+  --color-semantic-text-warning: #000000;
+  --color-semantic-text-danger: #ffffff;
+  --color-semantic-text-information: #ffffff;
+  --color-semantic-text-white: #ffffff;
+  --color-semantic-text-black: #000000;
+  --color-semantic-text-base: #111827;
+  --color-semantic-text-muted: #4b5563;
+}

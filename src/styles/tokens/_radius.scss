@@ -1,34 +1,21 @@
-/* Radius Tokens */
-
-/* ==========================================================================
-  Border Radius Tokens
-  Consistent border radius values
-  ========================================================================== */
-
 :root {
-  /* Material Design 3 Radius Tokens */
-  /* Corner Radius */
-  --md-radius-none:        0px;
-  --md-radius-extra-small: 4px;
-  --md-radius-small:       8px;
-  --md-radius-medium:      12px;
-  --md-radius-large:       16px;
-  --md-radius-extra-large: 28px;
-  --md-radius-full:        9999px;
-
-  /* Material Design 3 Common Radius Patterns */
-  --md-radius-xs:          var(--md-radius-extra-small);
-  --md-radius-sm:          var(--md-radius-small);
-  --md-radius-md:          var(--md-radius-medium);
-  --md-radius-lg:          var(--md-radius-large);
-  --md-radius-xl:          var(--md-radius-extra-large);
-  --md-radius-full:        var(--md-radius-full);
-
-  /* Material Design 3 Component-specific Radius */
-  --md-radius-button:      var(--md-radius-medium);
-  --md-radius-card:        var(--md-radius-large);
-  --md-radius-dialog:      var(--md-radius-extra-large);
-  --md-radius-fab:         var(--md-radius-full);
-  --md-radius-chip:        var(--md-radius-full);
-  --md-radius-input:       var(--md-radius-small);
+  --radius-md-base-none: 0px;
+  --radius-md-base-extra-small: 4px;
+  --radius-md-base-small: 8px;
+  --radius-md-base-medium: 12px;
+  --radius-md-base-large: 16px;
+  --radius-md-base-extra-large: 28px;
+  --radius-md-base-full: 9999px;
+  --radius-md-common-xs: 4px;
+  --radius-md-common-sm: 8px;
+  --radius-md-common-md: 12px;
+  --radius-md-common-lg: 16px;
+  --radius-md-common-xl: 28px;
+  --radius-md-common-full: 9999px;
+  --radius-md-component-button: 12px;
+  --radius-md-component-card: 16px;
+  --radius-md-component-dialog: 28px;
+  --radius-md-component-fab: 9999px;
+  --radius-md-component-chip: 9999px;
+  --radius-md-component-input: 8px;
 }

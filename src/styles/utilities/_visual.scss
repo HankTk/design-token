@@ -1,0 +1,59 @@
+/* ==========================================================================
+  Visual Utilities
+  ========================================================================== */
+.u {
+  /* Border */
+  &-border {
+    &-0 { border: none; }
+    &-default { border: 1px solid var(--color-semantic-border); }
+  }
+
+  &-rounded {
+    &-default { border-radius: var(--radius-md-common-sm); }
+    &-circle { border-radius: 50%; }
+  }
+
+  /* Shadow */
+  &-shadow {
+    &-sm { box-shadow: var(--shadow-md-component-sm); }
+    &-md { box-shadow: var(--shadow-md-component-md); }
+    &-lg { box-shadow: var(--shadow-md-component-lg); }
+  }
+
+  /* Background */
+  &-bg {
+    &-transparent { background-color: transparent; }
+    &-primary { 
+      background-color: var(--color-semantic-background-primary);
+      color: var(--color-semantic-text-primary);
+    }
+    &-secondary {
+      background-color: var(--color-semantic-background-secondary);
+      color: var(--color-semantic-text-secondary);
+    }
+    &-surface { background-color: var(--color-semantic-background-elevated); }
+    &-success {
+      background-color: var(--color-semantic-background-success);
+      color: var(--color-semantic-text-success);
+    }
+    &-warning {
+      background-color: var(--color-semantic-background-warning);
+      color: var(--color-semantic-text-warning);
+    }
+    &-danger {
+      background-color: var(--color-semantic-background-danger);
+      color: var(--color-semantic-text-danger);
+    }
+    &-info {
+      background-color: var(--color-semantic-background-information);
+      color: var(--color-semantic-text-information);
+    }
+  }
+
+  /* Cursor */
+  &-cursor {
+    &-pointer { cursor: pointer; }
+    &-default { cursor: default; }
+    &-not-allowed { cursor: not-allowed; }
+  }
+} 

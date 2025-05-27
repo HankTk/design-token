@@ -3,14 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  background-color: var(--surface-color);
-  box-shadow: var(--md-shadow-sm);
+  background-color: var(--color-semantic-background-elevated);
+  box-shadow: var(--shadow-md-common-sm);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  height: var(--md-header-height);
+  height: var(--sizing-md-header-height);
 }
 
 .header__left, .header__right {
@@ -20,31 +20,31 @@
 }
 
 .header__left {
-  gap: var(--md-spacing-md);
-  padding-left: var(--md-spacing-md);
+  gap: var(--spacing-md-common-md);
+  padding-left: var(--spacing-md-common-md);
 }
 
 .header__right {
-  gap: var(--md-spacing-sm);
-  padding-right: var(--md-spacing-md);
+  gap: var(--spacing-md-common-sm);
+  padding-right: var(--spacing-md-common-md);
 }
 
 .btn-icon {
   background: none;
   border: none;
-  color: var(--text-color);
+  color: var(--color-semantic-text-base);
   cursor: pointer;
-  padding: var(--md-spacing-sm);
+  padding: var(--spacing-md-common-sm);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color var(--md-transition-fast);
+  transition: background-color var(--transition-md-common-fast);
   width: 40px;
   height: 40px;
 
   &:hover {
-    background-color: var(--border-color);
+    background-color: var(--color-semantic-border);
   }
 
   i {
@@ -53,7 +53,8 @@
 }
 
 h1 {
-  font-size: var(--font-size-lg);
+  font-size: var(--typography-font-size-lg);
   margin: 0;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--typography-font-weight-medium);
+  color: var(--color-semantic-text-base);
 } 

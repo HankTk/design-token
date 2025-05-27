@@ -1,0 +1,36 @@
+{
+  "color": {
+    "semantic": {
+      "primary": { "value": "{color.base.blue.500.value}" },
+      "secondary": { "value": "{color.base.gray.500.value}" },
+      "success": { "value": "{color.base.green.500.value}" },
+      "warning": { "value": "{color.base.yellow.500.value}" },
+      "danger": { "value": "{color.base.red.500.value}" },
+      "information": { "value": "{color.base.blue.400.value}" },
+      "background": {
+        "primary": { "value": "{color.semantic.primary.value}" },
+        "secondary": { "value": "{color.semantic.secondary.value}" },
+        "success": { "value": "{color.semantic.success.value}" },
+        "warning": { "value": "{color.semantic.warning.value}" },
+        "danger": { "value": "{color.semantic.danger.value}" },
+        "information": { "value": "{color.semantic.information.value}" },
+        "white": { "value": "{color.base.white.value}" },
+        "black": { "value": "{color.base.black.value}" },
+        "base": { "value": "{color.base.gray.100.value}" },
+        "elevated": { "value": "{color.base.white.value}" }
+      },
+      "text": {
+        "primary": { "value": "{color.base.white.value}" },
+        "secondary": { "value": "{color.base.white.value}" },
+        "success": { "value": "{color.base.white.value}" },
+        "warning": { "value": "{color.base.black.value}" },
+        "danger": { "value": "{color.base.white.value}" },
+        "information": { "value": "{color.base.white.value}" },
+        "white": { "value": "{color.base.white.value}" },
+        "black": { "value": "{color.base.black.value}" },
+        "base": { "value": "{color.base.gray.900.value}" },
+        "muted": { "value": "{color.base.gray.600.value}" }
+      }
+    }
+  }
+} 

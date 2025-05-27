@@ -1,36 +1,23 @@
-/* Transition Tokens */
-
-/* ==========================================================================
-  Transition Tokens
-  ========================================================================== */
-
 :root {
-  /* Material Design 3 Duration Tokens */
-  --md-duration-shortest:            150ms;
-  --md-duration-shorter:             200ms;
-  --md-duration-short:               250ms;
-  --md-duration-standard:            300ms;
-  --md-duration-complex:             375ms;
-  --md-duration-entering:            225ms;
-  --md-duration-exiting:             195ms;
-
-  /* Material Design 3 Easing Tokens */
-  --md-easing-linear:                cubic-bezier(0, 0, 1, 1);
-  --md-easing-standard:              cubic-bezier(0.2, 0, 0, 1);
-  --md-easing-emphasized:            cubic-bezier(0.2, 0, 0, 1);
-  --md-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
-  --md-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
-
-  /* Material Design 3 Common Transition Patterns */
-  --md-transition-fast:              var(--md-duration-shorter) var(--md-easing-standard);
-  --md-transition-normal:            var(--md-duration-standard) var(--md-easing-standard);
-  --md-transition-complex:           var(--md-duration-complex) var(--md-easing-standard);
-  --md-transition-theme:             var(--md-duration-standard) var(--md-easing-standard);
-
-  /* Material Design 3 Component-specific Transitions */
-  --md-transition-button:            var(--md-transition-standard);
-  --md-transition-card:              var(--md-transition-standard);
-  --md-transition-dialog:            var(--md-transition-emphasized);
-  --md-transition-fab:               var(--md-transition-emphasized);
-  --md-transition-nav-drawer:        var(--md-transition-emphasized);
+  --transition-md-duration-shortest: 150ms;
+  --transition-md-duration-shorter: 200ms;
+  --transition-md-duration-short: 250ms;
+  --transition-md-duration-standard: 300ms;
+  --transition-md-duration-complex: 375ms;
+  --transition-md-duration-entering: 225ms;
+  --transition-md-duration-exiting: 195ms;
+  --transition-md-easing-linear: cubic-bezier(0, 0, 1, 1);
+  --transition-md-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --transition-md-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+  --transition-md-common-fast: 200ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-common-normal: 300ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-common-complex: 375ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-common-theme: 300ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-component-button: 300ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-component-card: 300ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-component-dialog: 300ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-component-fab: 300ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-md-component-nav-drawer: 300ms cubic-bezier(0.2, 0, 0, 1);
 }

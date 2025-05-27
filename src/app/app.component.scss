@@ -1,5 +1,5 @@
 .main-content {
-  margin-top: var(--md-header-height);
-  padding: var(--spacing-lg);
-  min-height: calc(100vh - var(--md-header-height));
+  margin-top: var(--sizing-md-header-height);
+  padding: var(--spacing-md-common-lg);
+  min-height: calc(100vh - var(--sizing-md-header-height));
 } 

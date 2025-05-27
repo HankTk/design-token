@@ -1,0 +1,75 @@
+{
+  "source": ["tokens/properties/**/*.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "src/styles/tokens/",
+      "files": [
+        {
+          "destination": "_colors-base.scss",
+          "format": "scss/variables",
+          "filter": "isBaseColor",
+          "name": "Base Color Definitions"
+        },
+        {
+          "destination": "_colors-semantic.scss",
+          "format": "scss/variables",
+          "filter": "isSemanticColor",
+          "name": "Semantic Color Definitions"
+        },
+        {
+          "destination": "_colors-md-base.scss",
+          "format": "scss/variables",
+          "filter": "isMdBaseColor",
+          "name": "Material Design 3 Base Color Definitions"
+        },
+        {
+          "destination": "_colors-md-surface.scss",
+          "format": "scss/variables",
+          "filter": "isMdSurfaceColor",
+          "name": "Material Design 3 Surface Color Definitions"
+        },
+        {
+          "destination": "_typography.scss",
+          "format": "scss/variables",
+          "filter": "isTypography"
+        },
+        {
+          "destination": "_spacing.scss",
+          "format": "scss/variables",
+          "filter": "isSpacing"
+        },
+        {
+          "destination": "_sizing.scss",
+          "format": "scss/variables",
+          "filter": "isSizing"
+        },
+        {
+          "destination": "_radius.scss",
+          "format": "scss/variables",
+          "filter": "isRadius"
+        },
+        {
+          "destination": "_shadows.scss",
+          "format": "scss/variables",
+          "filter": "isShadow"
+        },
+        {
+          "destination": "_transition.scss",
+          "format": "scss/variables",
+          "filter": "isTransition"
+        }
+      ]
+    },
+    "typescript": {
+      "transformGroup": "typescript",
+      "buildPath": "src/styles/tokens/",
+      "files": [
+        {
+          "destination": "tokens.ts",
+          "format": "typescript/variables"
+        }
+      ]
+    }
+  }
+} 

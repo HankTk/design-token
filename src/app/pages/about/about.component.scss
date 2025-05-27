@@ -1,63 +1,121 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: var(--md-spacing-lg);
+  padding: var(--spacing-md-common-lg);
 }
 
 h1 {
-  margin-bottom: var(--md-spacing-xl);
-  font-size: var(--font-size-2xl);
-  color: var(--text-color);
-  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-md-common-xl);
+  font-size: var(--typography-font-size-2xl);
+  color: var(--color-semantic-text-base);
+  font-weight: var(--typography-font-weight-medium);
 }
 
 .card {
-  background-color: var(--surface-color);
-  border-radius: var(--md-radius-card);
-  padding: var(--md-spacing-xl);
-  box-shadow: var(--md-shadow-md);
-  margin-bottom: var(--md-spacing-xl);
+  background-color: var(--color-semantic-background-elevated);
+  border-radius: var(--radius-md-component-card);
+  padding: var(--spacing-md-common-xl);
+  box-shadow: var(--shadow-md-component-card);
+  margin-bottom: var(--spacing-md-common-xl);
 
   h2 {
-    margin-bottom: var(--md-spacing-lg);
-    font-size: var(--font-size-xl);
-    color: var(--text-color);
-    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-md-common-lg);
+    font-size: var(--typography-font-size-xl);
+    color: var(--color-semantic-text-base);
+    font-weight: var(--typography-font-weight-medium);
   }
 
   h3 {
-    margin: var(--md-spacing-lg) 0 var(--md-spacing-md);
-    font-size: var(--font-size-lg);
-    color: var(--text-color);
-    font-weight: var(--font-weight-medium);
+    margin: var(--spacing-md-common-lg) 0 var(--spacing-md-common-md);
+    font-size: var(--typography-font-size-lg);
+    color: var(--color-semantic-text-base);
+    font-weight: var(--typography-font-weight-medium);
   }
 
   p {
-    color: var(--text-color-secondary);
+    color: var(--color-semantic-text-muted);
     line-height: 1.6;
-    margin-bottom: var(--md-spacing-md);
-    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-md-common-md);
+    font-size: var(--typography-font-size-md);
   }
 
   ul {
     list-style-type: none;
     padding: 0;
-    margin: var(--md-spacing-md) 0;
+    margin: var(--spacing-md-common-md) 0;
 
     li {
-      padding: var(--md-spacing-sm) 0;
-      color: var(--text-color-secondary);
+      padding: var(--spacing-md-common-sm) 0;
+      color: var(--color-semantic-text-muted);
       display: flex;
       align-items: center;
-      gap: var(--md-spacing-sm);
-      font-size: var(--font-size-md);
+      gap: var(--spacing-md-common-sm);
+      font-size: var(--typography-font-size-md);
 
       &::before {
         content: "•";
-        color: var(--primary-color);
-        font-size: var(--font-size-lg);
+        color: var(--color-semantic-primary);
+        font-size: var(--typography-font-size-lg);
         line-height: 1;
       }
     }
   }
+}
+
+.about-page {
+  padding: var(--spacing-md-common-lg);
+}
+
+.page-title {
+  margin-bottom: var(--spacing-md-common-xl);
+  font-size: var(--typography-font-size-2xl);
+  font-weight: var(--typography-font-weight-medium);
+}
+
+.hero-section {
+  padding: var(--spacing-md-common-xl);
+  background-color: var(--color-semantic-background-elevated);
+  border-radius: var(--radius-md-common-lg);
+  margin-bottom: var(--spacing-md-common-xl);
+}
+
+.section-title {
+  margin-bottom: var(--spacing-md-common-lg);
+  font-size: var(--typography-font-size-xl);
+  font-weight: var(--typography-font-weight-medium);
+}
+
+.section-subtitle {
+  margin: var(--spacing-md-common-lg) 0 var(--spacing-md-common-md);
+  font-size: var(--typography-font-size-lg);
+  font-weight: var(--typography-font-weight-medium);
+}
+
+.section-content {
+  margin-bottom: var(--spacing-md-common-md);
+  font-size: var(--typography-font-size-md);
+}
+
+.divider {
+  margin: var(--spacing-md-common-md) 0;
+  border: none;
+  border-top: 1px solid var(--color-semantic-border);
+}
+
+.feature-list {
+  padding: var(--spacing-md-common-sm) 0;
+}
+
+.feature-item {
+  display: flex;
+  gap: var(--spacing-md-common-sm);
+  font-size: var(--typography-font-size-md);
+}
+
+.feature-icon {
+  font-size: var(--typography-font-size-lg);
+}
+
+.about-section {
+  @extend .card;
 } 

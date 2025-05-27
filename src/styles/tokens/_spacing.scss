@@ -1,41 +1,31 @@
-/* Spacing Tokens */
-
-/* ==========================================================================
-  Spacing Tokens
-  Consistent spacing values
-  ========================================================================== */
-
 :root {
-  /* Material Design 3 Spacing Tokens */
-  --md-spacing-0: 0px;
-  --md-spacing-1: 4px;
-  --md-spacing-2: 8px;
-  --md-spacing-3: 12px;
-  --md-spacing-4: 16px;
-  --md-spacing-5: 20px;
-  --md-spacing-6: 24px;
-  --md-spacing-7: 28px;
-  --md-spacing-8: 32px;
-  --md-spacing-9: 36px;
-  --md-spacing-10: 40px;
-  --md-spacing-11: 44px;
-  --md-spacing-12: 48px;
-  --md-spacing-13: 52px;
-  --md-spacing-14: 56px;
-  --md-spacing-15: 60px;
-  --md-spacing-16: 64px;
-  --md-spacing-17: 68px;
-  --md-spacing-18: 72px;
-  --md-spacing-19: 76px;
-  --md-spacing-20: 80px;
-
-  /* Material Design 3 Common Spacing Patterns */
-  --md-spacing-xs:  var(--md-spacing-1);
-  --md-spacing-sm:  var(--md-spacing-2);
-  --md-spacing-md:  var(--md-spacing-4);
-  --md-spacing-lg:  var(--md-spacing-6);
-  --md-spacing-xl:  var(--md-spacing-8);
-  --md-spacing-2xl: var(--md-spacing-12);
-  --md-spacing-3xl: var(--md-spacing-16);
-  --md-spacing-4xl: var(--md-spacing-20);
-} 
+  --spacing-md-base-0: 0px;
+  --spacing-md-base-1: 4px;
+  --spacing-md-base-2: 8px;
+  --spacing-md-base-3: 12px;
+  --spacing-md-base-4: 16px;
+  --spacing-md-base-5: 20px;
+  --spacing-md-base-6: 24px;
+  --spacing-md-base-7: 28px;
+  --spacing-md-base-8: 32px;
+  --spacing-md-base-9: 36px;
+  --spacing-md-base-10: 40px;
+  --spacing-md-base-11: 44px;
+  --spacing-md-base-12: 48px;
+  --spacing-md-base-13: 52px;
+  --spacing-md-base-14: 56px;
+  --spacing-md-base-15: 60px;
+  --spacing-md-base-16: 64px;
+  --spacing-md-base-17: 68px;
+  --spacing-md-base-18: 72px;
+  --spacing-md-base-19: 76px;
+  --spacing-md-base-20: 80px;
+  --spacing-md-common-xs: 4px;
+  --spacing-md-common-sm: 8px;
+  --spacing-md-common-md: 16px;
+  --spacing-md-common-lg: 24px;
+  --spacing-md-common-xl: 32px;
+  --spacing-md-common-2xl: 48px;
+  --spacing-md-common-3xl: 64px;
+  --spacing-md-common-4xl: 80px;
+}

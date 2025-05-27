@@ -11,6 +11,7 @@
           [(ngModel)]="formData.name"
           required
           #name="ngModel"
+          style="width: 100%"
         >
         <div class="error" *ngIf="name.invalid && (name.dirty || name.touched)">
           Name is required
@@ -27,6 +28,7 @@
           required
           email
           #email="ngModel"
+          style="width: 100%"
         >
         <div class="error" *ngIf="email.invalid && (email.dirty || email.touched)">
           Valid email is required
@@ -41,6 +43,7 @@
           [(ngModel)]="formData.message"
           required
           #message="ngModel"
+          style="width: 100%"
         ></textarea>
         <div class="error" *ngIf="message.invalid && (message.dirty || message.touched)">
           Message is required

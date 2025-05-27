@@ -1,45 +1,30 @@
-/* Sizing Tokens */
 :root {
-  /* Material Design Size Tokens */
-  --md-size-xs:   2rem;    /* 32px */
-  --md-size-sm:   4rem;    /* 64px */
-  --md-size-md:   6rem;    /* 96px */
-  --md-size-lg:   10rem;   /* 160px */
-  --md-size-xl:   16rem;   /* 256px */
-  --md-size-2xl:  26rem;   /* 416px */
-  --md-size-3xl:  42rem;   /* 672px */
-
-  /* Material Design 3 Sizing Tokens */
-  /* Component Sizes */
-  --md-component-height-xs: 24px;
-  --md-component-height-sm: 32px;
-  --md-component-height-md: 40px;
-  --md-component-height-lg: 48px;
-  --md-component-height-xl: 56px;
-
-  /* Header Height */
-  --md-header-height: 64px;
-
-  /* Icon Sizes */
-  --md-icon-size-xs:        16px;
-  --md-icon-size-sm:        20px;
-  --md-icon-size-md:        24px;
-  --md-icon-size-lg:        32px;
-  --md-icon-size-xl:        40px;
-
-  /* Container Sizes */
-  --md-container-width-xs:  320px;
-  --md-container-width-sm:  480px;
-  --md-container-width-md:  640px;
-  --md-container-width-lg:  960px;
-  --md-container-width-xl:  1280px;
-
-  /* Border Widths */
-  --md-border-width-none:   0px;
-  --md-border-width-thin:   1px;
-  --md-border-width-medium: 2px;
-  --md-border-width-thick:  4px;
-
-  /* Material Design 3 Size Tokens */
-  --md-size-4xl:            var(--md-spacing-20); /* 80px */
-} 
+  --sizing-md-base-xs: 2rem;
+  --sizing-md-base-sm: 4rem;
+  --sizing-md-base-md: 6rem;
+  --sizing-md-base-lg: 10rem;
+  --sizing-md-base-xl: 16rem;
+  --sizing-md-base-2xl: 26rem;
+  --sizing-md-base-3xl: 42rem;
+  --sizing-md-base-4xl: 80px;
+  --sizing-md-component-height-xs: 24px;
+  --sizing-md-component-height-sm: 32px;
+  --sizing-md-component-height-md: 40px;
+  --sizing-md-component-height-lg: 48px;
+  --sizing-md-component-height-xl: 56px;
+  --sizing-md-header-height: 64px;
+  --sizing-md-icon-xs: 16px;
+  --sizing-md-icon-sm: 20px;
+  --sizing-md-icon-md: 24px;
+  --sizing-md-icon-lg: 32px;
+  --sizing-md-icon-xl: 40px;
+  --sizing-md-container-width-xs: 320px;
+  --sizing-md-container-width-sm: 480px;
+  --sizing-md-container-width-md: 640px;
+  --sizing-md-container-width-lg: 960px;
+  --sizing-md-container-width-xl: 1280px;
+  --sizing-md-border-width-none: 0px;
+  --sizing-md-border-width-thin: 1px;
+  --sizing-md-border-width-medium: 2px;
+  --sizing-md-border-width-thick: 4px;
+}

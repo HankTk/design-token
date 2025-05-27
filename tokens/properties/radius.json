@@ -1,0 +1,31 @@
+{
+  "radius": {
+    "md": {
+      "base": {
+        "none": { "value": "0px" },
+        "extra-small": { "value": "4px" },
+        "small": { "value": "8px" },
+        "medium": { "value": "12px" },
+        "large": { "value": "16px" },
+        "extra-large": { "value": "28px" },
+        "full": { "value": "9999px" }
+      },
+      "common": {
+        "xs": { "value": "{radius.md.base.extra-small.value}" },
+        "sm": { "value": "{radius.md.base.small.value}" },
+        "md": { "value": "{radius.md.base.medium.value}" },
+        "lg": { "value": "{radius.md.base.large.value}" },
+        "xl": { "value": "{radius.md.base.extra-large.value}" },
+        "full": { "value": "{radius.md.base.full.value}" }
+      },
+      "component": {
+        "button": { "value": "{radius.md.base.medium.value}" },
+        "card": { "value": "{radius.md.base.large.value}" },
+        "dialog": { "value": "{radius.md.base.extra-large.value}" },
+        "fab": { "value": "{radius.md.base.full.value}" },
+        "chip": { "value": "{radius.md.base.full.value}" },
+        "input": { "value": "{radius.md.base.small.value}" }
+      }
+    }
+  }
+} 
